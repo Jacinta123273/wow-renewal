@@ -1,0 +1,521 @@
+/* IBM Planning Analytics — Woolworths Renewal Presentation */
+/* IBM Brand Colors */
+:root {
+  --ibm-blue: #0F62FE;
+  --ibm-blue-dark: #002D9C;
+  --ibm-blue-light: #82CFFF;
+  --ibm-cyan-light: #E5F6FF;
+  --ibm-black: #161616;
+  --ibm-white: #FFFFFF;
+  --ibm-gray-10: #F4F4F4;
+  --ibm-gray-20: #E0E0E0;
+  --ibm-gray-50: #8D8D8D;
+  --ibm-gray-70: #525252;
+  --ibm-gray-90: #262626;
+  --ibm-purple: #A56EFF;
+  --ibm-teal: #009D9A;
+  --ibm-red: #FA4D56;
+  --ibm-green: #24A148;
+  --ibm-yellow: #F1C21B;
+  --wow-green: #00833F;
+  --wow-red: #ED1C24;
+
+  --slide-w: 1280px;
+  --slide-h: 720px;
+  --slide-aspect: 16/9;
+}
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'IBM Plex Sans', 'Segoe UI', system-ui, sans-serif;
+  background: #1a1a2e;
+  color: var(--ibm-black);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========== PRESENTATION WRAPPER ========== */
+/* #presentation dimensions and scaling are handled by inline JS scaler */
+
+/* ========== SLIDES ========== */
+.slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: none;
+  background: var(--ibm-white);
+  overflow: hidden;
+}
+.slide.active { display: flex; flex-direction: column; }
+
+/* ========== NAVIGATION BAR ========== */
+#nav-bar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  height: 48px;
+  background: rgba(22, 22, 22, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 100;
+  user-select: none;
+}
+#nav-bar button {
+  background: var(--ibm-blue);
+  color: white;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: inherit;
+  transition: background 0.15s;
+}
+#nav-bar button:hover { background: #0353e9; }
+#nav-bar button:disabled { background: #444; cursor: not-allowed; }
+#slide-counter {
+  color: #ccc;
+  font-size: 13px;
+  min-width: 80px;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace, sans-serif;
+}
+
+/* ========== COMMON SLIDE ELEMENTS ========== */
+.slide-header {
+  background: var(--ibm-blue-dark);
+  color: white;
+  padding: 10px 20px 8px;
+  position: relative;
+}
+.slide-header .header-tag {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+.slide-header h2 {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+.slide-number {
+  position: absolute;
+  right: 18px;
+  bottom: 8px;
+  font-size: 11px;
+  opacity: 0.6;
+  font-weight: 300;
+}
+
+.slide-footer {
+  background: var(--ibm-blue-dark);
+  color: white;
+  padding: 5px 20px;
+  font-size: 10px;
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+.slide-footer .footer-tag { font-size: 9px; letter-spacing: 0.5px; text-transform: uppercase; opacity: 0.7; }
+
+.slide-body {
+  flex: 1;
+  padding: 18px 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ========== TABLES ========== */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+}
+.data-table th {
+  background: var(--ibm-blue-dark);
+  color: white;
+  padding: 7px 10px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.3px;
+}
+.data-table td {
+  padding: 7px 10px;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: middle;
+}
+.data-table tr:last-child td { border-bottom: none; }
+.data-table tr.total-row { background: var(--ibm-cyan-light); font-weight: 600; }
+.data-table tr.subtotal-row { background: #f4f8ff; font-weight: 500; }
+.data-table tr:nth-child(even):not(.total-row):not(.subtotal-row) { background: #fafafa; }
+.data-table td.money { text-align: right; font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
+.data-table td.qty { text-align: center; }
+.data-table .cat-cell { background: var(--ibm-blue-dark); color: white; font-size: 10px; text-align: center; writing-mode: horizontal-tb; font-weight: 500; }
+
+/* ========== STAT CARDS ========== */
+.stat-card {
+  background: var(--ibm-cyan-light);
+  border-left: 4px solid var(--ibm-blue);
+  padding: 10px 14px;
+  border-radius: 2px;
+}
+.stat-card .stat-num {
+  font-size: 28px;
+  font-weight: 300;
+  color: var(--ibm-blue-dark);
+  line-height: 1;
+}
+.stat-card .stat-label {
+  font-size: 11px;
+  color: var(--ibm-gray-70);
+  margin-top: 2px;
+}
+
+/* ========== ROI CARDS ========== */
+.roi-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-top: 3px solid var(--ibm-blue);
+  padding: 12px 14px;
+  border-radius: 2px;
+}
+.roi-card .roi-pct {
+  font-size: 32px;
+  font-weight: 300;
+  color: var(--ibm-blue);
+  line-height: 1;
+}
+
+/* ========== CAPABILITY TABLE ========== */
+.cap-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+.cap-table th {
+  background: var(--ibm-blue-dark);
+  color: white;
+  padding: 6px 8px;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 10.5px;
+}
+.cap-table th:first-child { text-align: left; width: 18%; }
+.cap-table th .option-label { font-size: 9px; opacity: 0.7; font-weight: 400; display: block; }
+.cap-table td { padding: 5px 8px; border-bottom: 1px solid #e8e8e8; vertical-align: middle; }
+.cap-table td.cap-label { font-weight: 500; font-size: 11px; color: var(--ibm-gray-90); }
+.cap-table td.cap-detail { font-size: 10px; color: var(--ibm-gray-70); text-align: center; line-height: 1.3; }
+.cap-table tr.section-row td {
+  background: var(--ibm-blue);
+  color: white;
+  font-weight: 600;
+  font-size: 10px;
+  padding: 4px 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.cap-table tr:nth-child(even):not(.section-row) { background: #fafafa; }
+.cap-icon { font-size: 14px; display: block; text-align: center; }
+.cap-icon.included { color: var(--ibm-green); }
+.cap-icon.partial { color: var(--ibm-yellow); }
+.cap-icon.none { color: var(--ibm-red); }
+
+/* ========== STEP ITEMS ========== */
+.step-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.step-num {
+  background: var(--ibm-blue);
+  color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.step-content .step-title { font-weight: 600; font-size: 12px; color: var(--ibm-gray-90); }
+.step-content .step-body { font-size: 11px; color: var(--ibm-gray-70); margin-top: 1px; line-height: 1.4; }
+.step-content .step-result { 
+  font-size: 11px; color: var(--ibm-blue-dark); 
+  font-weight: 600; margin-top: 2px;
+}
+
+/* ========== CHANGE BADGES ========== */
+.change-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--ibm-cyan-light);
+  border: 1px solid var(--ibm-blue-light);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  color: var(--ibm-blue-dark);
+  font-weight: 500;
+}
+.change-badge.new { background: #defbe6; border-color: #24a148; color: #0e6027; }
+
+/* ========== SUMMARY BOXES ========== */
+.summary-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+.summary-box {
+  flex: 1;
+  background: var(--ibm-cyan-light);
+  border-top: 3px solid var(--ibm-blue);
+  padding: 10px 12px;
+  border-radius: 2px;
+}
+.summary-box.highlight {
+  background: var(--ibm-blue-dark);
+  color: white;
+  border-top-color: var(--ibm-blue-light);
+}
+.summary-box .s-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; opacity: 0.7; margin-bottom: 2px; }
+.summary-box .s-value { font-size: 16px; font-weight: 300; color: var(--ibm-blue-dark); }
+.summary-box.highlight .s-value { color: white; }
+.summary-box .s-sub { font-size: 10px; opacity: 0.7; margin-top: 1px; }
+
+/* ========== YEAR CARDS ========== */
+.year-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-left: 4px solid var(--ibm-blue);
+  padding: 10px 14px;
+  border-radius: 2px;
+}
+.year-label { 
+  font-size: 11px; font-weight: 700; color: var(--ibm-blue); 
+  text-transform: uppercase; min-width: 48px;
+}
+.year-card .year-amount {
+  font-size: 20px; font-weight: 300; color: var(--ibm-blue-dark);
+  min-width: 90px;
+}
+.year-card .year-desc { font-size: 11px; color: var(--ibm-gray-70); line-height: 1.3; }
+
+/* ========== CONFIDENCE INDICATORS ========== */
+.conf-high { background: #defbe6; color: #0e6027; padding: 1px 6px; border-radius: 10px; font-size: 10px; font-weight: 600; }
+.conf-med { background: #fef3cd; color: #7d4e00; padding: 1px 6px; border-radius: 10px; font-size: 10px; font-weight: 600; }
+.conf-low { background: #ffe0e0; color: #a12424; padding: 1px 6px; border-radius: 10px; font-size: 10px; font-weight: 600; }
+
+/* ========== ASSUMPTION TABLE ========== */
+.assumption-table { width: 100%; border-collapse: collapse; font-size: 10.5px; }
+.assumption-table th {
+  background: var(--ibm-blue-dark); color: white;
+  padding: 5px 8px; text-align: left; font-size: 10px;
+}
+.assumption-table td { padding: 4px 8px; border-bottom: 1px solid #e8e8e8; vertical-align: middle; }
+.assumption-table tr:nth-child(even) { background: #fafafa; }
+
+/* ========== SECTION DIVIDER ========== */
+.section-label {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--ibm-blue);
+  font-weight: 600;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--ibm-blue-light);
+  margin-bottom: 8px;
+}
+
+/* ========== QUOTE HIGHLIGHT ========== */
+.big-quote {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--ibm-gray-70);
+  border-left: 3px solid var(--ibm-blue);
+  padding-left: 12px;
+  line-height: 1.5;
+}
+
+/* ========== FORMULA BOX ========== */
+.formula-box {
+  background: var(--ibm-gray-10);
+  border: 1px solid #e0e0e0;
+  padding: 8px 12px;
+  border-radius: 2px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: var(--ibm-blue-dark);
+  margin-bottom: 6px;
+}
+
+/* ========== EFFICIENCY TRAJECTORY ========== */
+.traj-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.traj-bar .yr { font-size: 11px; color: var(--ibm-gray-70); width: 44px; flex-shrink: 0; }
+.traj-bar .bar-track { flex: 1; height: 20px; background: #e8e8e8; border-radius: 2px; overflow: hidden; }
+.traj-bar .bar-fill { height: 100%; background: var(--ibm-blue); display: flex; align-items: center; padding-left: 8px; color: white; font-size: 10px; font-weight: 600; transition: width 0.4s; }
+.traj-bar .bar-fill.target { background: var(--ibm-blue-dark); }
+.traj-bar .bar-val { font-size: 11px; font-weight: 600; color: var(--ibm-blue-dark); min-width: 60px; }
+
+/* ========== VALUE DIM ========== */
+.value-dim {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 6px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.value-dim:last-child { border-bottom: none; }
+.vd-num {
+  background: var(--ibm-blue-dark);
+  color: white;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 10px; font-weight: 700;
+  flex-shrink: 0;
+}
+.vd-title { font-size: 11.5px; font-weight: 600; color: var(--ibm-gray-90); }
+.vd-detail { font-size: 10.5px; color: var(--ibm-gray-70); line-height: 1.3; }
+
+/* ========== USE CASE SPLIT ========== */
+.use-case-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 11px;
+}
+.uc-label { flex: 1; color: var(--ibm-gray-70); }
+.uc-bar { flex: 3; height: 12px; background: #e8e8e8; border-radius: 6px; overflow: hidden; }
+.uc-fill { height: 100%; background: var(--ibm-blue); border-radius: 6px; }
+.uc-hrs { min-width: 50px; text-align: right; font-weight: 600; color: var(--ibm-blue-dark); font-size: 10px; }
+
+/* ========== TWO-COL LAYOUT ========== */
+.two-col { display: flex; gap: 14px; flex: 1; overflow: hidden; }
+.two-col .col { flex: 1; display: flex; flex-direction: column; gap: 8px; overflow: hidden; }
+.col-header {
+  background: var(--ibm-blue);
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 2px 2px 0 0;
+}
+.col-body {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-top: none;
+  padding: 10px 12px;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* ========== METRIC ROW ========== */
+.metric-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 11px;
+}
+.metric-row:last-child { border-bottom: none; }
+.metric-row .m-label { color: var(--ibm-gray-70); }
+.metric-row .m-value { font-weight: 600; color: var(--ibm-blue-dark); font-family: 'IBM Plex Mono', monospace; font-size: 12px; }
+.metric-row .m-value.big { font-size: 20px; font-weight: 300; color: var(--ibm-blue); }
+
+/* ========== SCENARIO RANGE ========== */
+.scenario-strip {
+  display: flex;
+  gap: 1px;
+  height: 28px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+.scen-seg {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  line-height: 1.2;
+}
+.scen-seg.down { background: #f4f4f4; color: var(--ibm-gray-70); }
+.scen-seg.base { background: var(--ibm-blue); color: white; }
+.scen-seg.up { background: var(--ibm-blue-dark); color: white; }
+.scen-seg .scen-pct { font-size: 11px; font-weight: 600; }
+
+/* ========== SECTION SLIDE (dark) ========== */
+.slide.dark-slide {
+  background: var(--ibm-black);
+  color: white;
+}
+.slide.ibm-blue-slide {
+  background: var(--ibm-blue-dark);
+  color: white;
+}
+
+/* ========== VIDEO / DEMO SLIDES ========== */
+.demo-card {
+  background: var(--ibm-gray-10);
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+  flex: 1;
+}
+.demo-play-btn {
+  width: 64px; height: 64px;
+  background: var(--ibm-blue);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px;
+  color: white;
+}
+
+/* ========== NORTH STAR CARD ========== */
+.north-star-card {
+  background: var(--ibm-blue-dark);
+  color: white;
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.north-star-card .ns-pct { font-size: 56px; font-weight: 300; line-height: 1; color: var(--ibm-blue-light); }
+.north-star-card .ns-label { font-size: 12px; opacity: 0.85; margin-top: 4px; }
+.north-star-card .ns-years { font-size: 11px; opacity: 0.65; margin-top: 2px; }
