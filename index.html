@@ -287,7 +287,117 @@
     </div>
 
     <!-- ======================================================
-         SLIDE 8 — Transition: Bob & Watsonx Orchestrate
+         SLIDE 8 — 3-Year Value Model (Buy Now vs Buy Later)
+    ====================================================== -->
+    <div class="slide" id="slide-8-value" style="background:#ffffff;">
+      <div style="display:flex;flex-direction:column;height:100%;padding:24px 32px 16px;">
+        <!-- Header -->
+        <div style="margin-bottom:6px;">
+          <div style="font-size:19px;font-weight:700;color:#161616;margin-bottom:4px;">Buying now avoids $768K over three years</div>
+          <div style="font-size:11px;color:#525252;">IBM Planning Analytics Agent Add-on | 750 authorised users | AUD</div>
+        </div>
+        <!-- Main content: chart + right panel -->
+        <div style="flex:1;display:flex;gap:24px;overflow:hidden;min-height:0;">
+          <!-- Left: chart -->
+          <div style="flex:1;display:flex;flex-direction:column;min-width:0;">
+            <div style="font-size:12px;font-weight:700;color:#161616;margin-bottom:10px;">Cumulative cost and savings by year</div>
+            <!-- SVG chart -->
+            <svg viewBox="0 0 540 300" style="width:100%;flex:1;overflow:visible;" xmlns="http://www.w3.org/2000/svg">
+              <!-- Y-axis grid lines -->
+              <line x1="60" y1="10" x2="60" y2="250" stroke="#8D8D8D" stroke-width="1"/>
+              <line x1="60" y1="250" x2="530" y2="250" stroke="#8D8D8D" stroke-width="1"/>
+              <!-- Grid lines -->
+              <line x1="60" y1="210" x2="530" y2="210" stroke="#DDE1E6" stroke-width="0.7"/>
+              <line x1="60" y1="170" x2="530" y2="170" stroke="#DDE1E6" stroke-width="0.7"/>
+              <line x1="60" y1="130" x2="530" y2="130" stroke="#DDE1E6" stroke-width="0.7"/>
+              <line x1="60" y1="90" x2="530" y2="90" stroke="#DDE1E6" stroke-width="0.7"/>
+              <line x1="60" y1="50" x2="530" y2="50" stroke="#DDE1E6" stroke-width="0.7"/>
+              <!-- Y labels -->
+              <text x="55" y="254" text-anchor="end" font-size="9" fill="#6F6F6F">$0</text>
+              <text x="55" y="214" text-anchor="end" font-size="9" fill="#6F6F6F">$250K</text>
+              <text x="55" y="174" text-anchor="end" font-size="9" fill="#6F6F6F">$500K</text>
+              <text x="55" y="134" text-anchor="end" font-size="9" fill="#6F6F6F">$750K</text>
+              <text x="55" y="94" text-anchor="end" font-size="9" fill="#6F6F6F">$1000K</text>
+              <text x="55" y="54" text-anchor="end" font-size="9" fill="#6F6F6F">$1250K</text>
+              <!--
+                Scale: $1250K = y50, $0 = y250 → 200px / $1250K = 0.16px per $K
+                Buy-now:  Y1=$122K→y230.5, Y2=$250K→y210, Y3=$384K→y188.6
+                Buy-later: Y1=$365K→y191.6, Y2=$749K→y130.2, Y3=$1152K→y65.7
+              -->
+              <!-- Blue line: Buy now -->
+              <polyline points="144,230 327,210 510,189" stroke="#0F62FE" stroke-width="3" fill="none" stroke-linejoin="round"/>
+              <circle cx="144" cy="230" r="5" fill="#0F62FE"/>
+              <circle cx="327" cy="210" r="5" fill="#0F62FE"/>
+              <circle cx="510" cy="189" r="5" fill="#0F62FE"/>
+              <!-- Red line: Buy later -->
+              <polyline points="144,191 327,130 510,66" stroke="#DA1E28" stroke-width="2.4" fill="none" stroke-linejoin="round"/>
+              <circle cx="144" cy="191" r="5" fill="#DA1E28"/>
+              <circle cx="327" cy="130" r="5" fill="#DA1E28"/>
+              <circle cx="510" cy="66" r="5" fill="#DA1E28"/>
+              <!-- Value labels: Buy now (blue, below) -->
+              <text x="144" y="246" text-anchor="middle" font-size="9" fill="#0F62FE" font-weight="600">$122K</text>
+              <text x="327" y="226" text-anchor="middle" font-size="9" fill="#0F62FE" font-weight="600">$250K</text>
+              <text x="510" y="205" text-anchor="middle" font-size="9" fill="#0F62FE" font-weight="600">$384K</text>
+              <!-- Value labels: Buy later (red, above) -->
+              <text x="144" y="184" text-anchor="middle" font-size="9" fill="#DA1E28" font-weight="600">$365K</text>
+              <text x="327" y="123" text-anchor="middle" font-size="9" fill="#DA1E28" font-weight="600">$749K</text>
+              <text x="510" y="59" text-anchor="middle" font-size="9" fill="#DA1E28" font-weight="600">$1152K</text>
+              <!-- X axis labels -->
+              <text x="144" y="266" text-anchor="middle" font-size="10" fill="#161616" font-weight="700">Year 1</text>
+              <text x="327" y="266" text-anchor="middle" font-size="10" fill="#161616" font-weight="700">Year 2</text>
+              <text x="510" y="266" text-anchor="middle" font-size="10" fill="#161616" font-weight="700">Year 3</text>
+              <!-- Legend -->
+              <line x1="65" y1="285" x2="90" y2="285" stroke="#0F62FE" stroke-width="3"/>
+              <circle cx="77" cy="285" r="4" fill="#0F62FE"/>
+              <text x="95" y="289" font-size="9" fill="#525252">Buy now: secured 70% discount + 5% YoY</text>
+              <line x1="295" y1="285" x2="320" y2="285" stroke="#DA1E28" stroke-width="2.4"/>
+              <circle cx="307" cy="285" r="4" fill="#DA1E28"/>
+              <text x="325" y="289" font-size="9" fill="#525252">Buy next year: 25% discount + 20% uplift + 5% YoY</text>
+            </svg>
+          </div>
+          <!-- Right panel -->
+          <div style="width:240px;flex-shrink:0;display:flex;flex-direction:column;gap:10px;">
+            <!-- Cumulative saving badge -->
+            <div style="background:#E8F5E9;border:1px solid #A7D8AF;border-radius:8px;padding:12px 16px;text-align:center;">
+              <div style="font-size:9px;font-weight:700;color:#198038;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px;">CUMULATIVE 3-YEAR SAVING</div>
+              <div style="font-size:32px;font-weight:700;color:#198038;line-height:1;">$768K</div>
+            </div>
+            <!-- Year-on-year breakdown -->
+            <div style="font-size:11px;font-weight:700;color:#161616;margin-bottom:2px;">Year-on-year value</div>
+            <div style="display:flex;flex-direction:column;gap:6px;">
+              <div style="background:#F4F4F4;border-left:3px solid #0F62FE;padding:8px 10px;border-radius:2px;">
+                <div style="font-size:10px;font-weight:700;color:#0F62FE;">Year 1</div>
+                <div style="font-size:14px;font-weight:700;color:#161616;">$244K</div>
+                <div style="font-size:9px;color:#525252;">cumulative saving</div>
+              </div>
+              <div style="background:#F4F4F4;border-left:3px solid #0F62FE;padding:8px 10px;border-radius:2px;">
+                <div style="font-size:10px;font-weight:700;color:#0F62FE;">Year 2</div>
+                <div style="font-size:14px;font-weight:700;color:#161616;">$499K</div>
+                <div style="font-size:9px;color:#525252;">+$256K YoY saving</div>
+              </div>
+              <div style="background:#F4F4F4;border-left:3px solid #0F62FE;padding:8px 10px;border-radius:2px;">
+                <div style="font-size:10px;font-weight:700;color:#0F62FE;">Year 3</div>
+                <div style="font-size:14px;font-weight:700;color:#161616;">$768K</div>
+                <div style="font-size:9px;color:#525252;">+$269K YoY saving</div>
+              </div>
+            </div>
+            <!-- Buy-next-year callout -->
+            <div style="background:#FFF1F1;border:1px solid #DA1E28;border-radius:6px;padding:8px 10px;margin-top:2px;">
+              <div style="font-size:9px;font-weight:700;color:#DA1E28;margin-bottom:2px;">Buy-next-year scenario</div>
+              <div style="font-size:16px;font-weight:700;color:#DA1E28;">$365K</div>
+              <div style="font-size:9px;color:#525252;">Year 1 annual cost after 20% uplift,<br>versus $122K now</div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer note -->
+        <div style="margin-top:8px;font-size:9px;color:#525252;font-style:italic;line-height:1.4;">
+          Buying now avoids $244K in Year 1 and $768K cumulatively over three years versus waiting and purchasing at 25% off after a 20% price uplift. · Assumptions: 750 users; current list annual rate A$405,990; secured starting annual cost A$121,797; buy-next-year scenario applies 25% discount to list, then a 20% price uplift. Both scenarios increase by 5% in Years 2 and 3. Excludes taxes and scope changes.
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================
+         SLIDE 9 — Transition: Bob & Watsonx Orchestrate
     ====================================================== -->
     <div class="slide" id="slide-8" style="background:#001141;color:#fff;position:relative;overflow:hidden;">
       <div style="position:absolute;left:0;top:0;width:6px;height:100%;background:linear-gradient(to bottom,#0F62FE,#82CFFF);z-index:1;"></div>
@@ -299,741 +409,241 @@
     </div>
 
     <!-- ======================================================
-         SLIDE 11 — AI Enhancement Bundle
+         SLIDE 11 — A simple case for AI (section intro, dark)
     ====================================================== -->
-    <div class="slide" id="slide-11">
-      <div class="slide-header">
-        <div class="header-tag">Woolworths 2026 IPA Renewal</div>
-        <h2>AI Enhancement Bundle</h2>
-        <div class="slide-number">11</div>
+    <div class="slide" id="slide-11" style="background:#002D9C;color:#fff;position:relative;overflow:hidden;">
+      <div style="position:absolute;left:0;top:0;width:6px;height:100%;background:linear-gradient(to bottom,#82CFFF,#0F62FE);z-index:1;"></div>
+      <div style="position:relative;z-index:2;display:flex;flex-direction:column;height:100%;padding:36px 44px 28px;">
+        <!-- Top label -->
+        <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#82CFFF;font-weight:600;margin-bottom:12px;">IBM Data &amp; AI | Woolworths Finance &amp; Planning</div>
+        <!-- Title -->
+        <div style="font-size:34px;font-weight:700;color:#ffffff;line-height:1.2;max-width:700px;margin-bottom:10px;">A simple case for AI in Planning Analytics and development</div>
+        <!-- Subtitle -->
+        <div style="font-size:16px;font-weight:300;color:rgba(255,255,255,0.75);margin-bottom:auto;">Built around Woolworths' target: 50% efficiency gain using Planning Analytics over 3 years</div>
+        <!-- 3 stat cards -->
+        <div style="display:flex;gap:16px;margin-top:28px;">
+          <div style="flex:1;background:rgba(255,255,255,0.08);border:1px solid rgba(130,207,255,0.3);border-radius:6px;padding:20px 22px;">
+            <div style="font-size:42px;font-weight:700;color:#82CFFF;line-height:1;">50%</div>
+            <div style="font-size:13px;color:rgba(255,255,255,0.8);margin-top:6px;line-height:1.4;">efficiency target over 3 years</div>
+          </div>
+          <div style="flex:1;background:rgba(255,255,255,0.08);border:1px solid rgba(130,207,255,0.3);border-radius:6px;padding:20px 22px;">
+            <div style="font-size:42px;font-weight:700;color:#82CFFF;line-height:1;">750</div>
+            <div style="font-size:13px;color:rgba(255,255,255,0.8);margin-top:6px;line-height:1.4;">licensed planning users (Agent Add-On)</div>
+          </div>
+          <div style="flex:1;background:rgba(255,255,255,0.08);border:1px solid rgba(130,207,255,0.3);border-radius:6px;padding:20px 22px;">
+            <div style="font-size:42px;font-weight:700;color:#82CFFF;line-height:1;">90</div>
+            <div style="font-size:13px;color:rgba(255,255,255,0.8);margin-top:6px;line-height:1.4;">developers (IBM Bob)</div>
+          </div>
+        </div>
       </div>
-      <div class="slide-body" style="gap:12px;">
-        <table class="data-table">
+      <div style="position:absolute;bottom:14px;left:44px;font-size:10px;color:rgba(255,255,255,0.4);">IBM Data &amp; AI | Confidential</div>
+    </div>
+
+    <!-- ======================================================
+         SLIDE 12 — Year 1 Investment Case
+    ====================================================== -->
+    <div class="slide" id="slide-12">
+      <div class="slide-header">
+        <div class="header-tag">IBM Data &amp; AI | Confidential</div>
+        <h2>Year 1 investment case</h2>
+        <div class="slide-number">2</div>
+      </div>
+      <div class="slide-body" style="gap:10px;padding:14px 22px;">
+        <div style="font-size:10.5px;color:#525252;font-style:italic;margin-bottom:2px;">Benefit = users × hours saved per week × 48 weeks × hourly rate. ROI = net return / Year 1 cost.</div>
+        <!-- Main table -->
+        <table class="data-table" style="font-size:11.5px;">
           <thead>
-            <tr><th>Description</th><th style="text-align:center;">Quantity</th><th style="text-align:right;padding-right:16px;">Annual Cost</th></tr>
+            <tr>
+              <th>Base case (AUD)</th>
+              <th style="text-align:right;padding-right:12px;">Agent</th>
+              <th style="text-align:right;padding-right:12px;">IBM Bob</th>
+              <th style="text-align:right;padding-right:12px;">Orchestrate</th>
+              <th style="text-align:right;padding-right:12px;background:#001d6c;">Combined</th>
+            </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Bob Authorised Users</td>
-              <td class="qty">90</td>
-              <td class="money">$22,979.70</td>
+              <td>Annual benefit</td>
+              <td class="money">$765,000</td>
+              <td class="money">$864,000</td>
+              <td class="money">$490,500</td>
+              <td class="money" style="font-weight:600;background:#f0f4ff;">$2,119,500</td>
             </tr>
             <tr>
-              <td>Bob Pooled Consumption — 1000 RU's Per Annum</td>
-              <td class="qty">180</td>
-              <td class="money">$127,400.69</td>
+              <td>Year 1 cost</td>
+              <td class="money">$181,797</td>
+              <td class="money">$180,000</td>
+              <td class="money">$121,196</td>
+              <td class="money" style="font-weight:600;background:#f0f4ff;">$482,993</td>
             </tr>
             <tr>
-              <td>Watson Orchestrate Standard Edition</td>
-              <td class="qty">1</td>
-              <td class="money">$81,196.02</td>
+              <td>Net return</td>
+              <td class="money">$583,203</td>
+              <td class="money">$684,000</td>
+              <td class="money">$369,304</td>
+              <td class="money" style="font-weight:600;background:#f0f4ff;">$1,636,507</td>
             </tr>
-            <tr class="subtotal-row">
-              <td colspan="2"><strong>Annual Total (AUD)</strong></td>
-              <td class="money"><strong>$231,576.41</strong></td>
+            <tr>
+              <td>ROI</td>
+              <td class="money">321%</td>
+              <td class="money">380%</td>
+              <td class="money">305%</td>
+              <td class="money" style="font-weight:700;color:#0F62FE;background:#f0f4ff;">339%</td>
             </tr>
             <tr class="total-row">
-              <td colspan="2"><strong>24 Month Total (AUD) — 5% YoY</strong></td>
-              <td class="money"><strong>$474,731.64</strong></td>
+              <td>Payback</td>
+              <td class="money">2.9 months</td>
+              <td class="money">2.5 months</td>
+              <td class="money">3.0 months</td>
+              <td class="money" style="font-weight:700;">2.7 months</td>
             </tr>
           </tbody>
         </table>
-        <div style="display:flex;gap:12px;margin-top:6px;">
+        <!-- Conservative callout -->
+        <div style="background:#f0f4ff;border-left:4px solid #0F62FE;padding:10px 14px;border-radius:2px;font-size:10.5px;color:#525252;line-height:1.5;">
+          <strong style="color:#002D9C;">Conservative case</strong> (half the time saved): $577K net, 119% ROI, 5.5 month payback.<br>
+          Benefits held flat over 3 years: about <strong>$5.2M cumulative net</strong>.
+        </div>
+        <!-- 3 cost breakdown cards -->
+        <div style="display:flex;gap:10px;margin-top:4px;">
           <div class="stat-card" style="flex:1;">
-            <div class="stat-num">$150,380</div>
-            <div class="stat-label">Bob Annual Investment (users + consumption)</div>
+            <div class="stat-num">$181,797</div>
+            <div class="stat-label">Agent: $121,797 licence + $60K implementation</div>
           </div>
           <div class="stat-card" style="flex:1;">
-            <div class="stat-num">$81,196</div>
-            <div class="stat-label">Watsonx Orchestrate Annual Investment</div>
+            <div class="stat-num">$180,000</div>
+            <div class="stat-label">Bob: $150,000 licence + $30K implementation</div>
           </div>
           <div class="stat-card" style="flex:1;background:#002D9C;border-color:#0F62FE;">
-            <div class="stat-num" style="color:#82CFFF;">$231,576</div>
-            <div class="stat-label" style="color:rgba(255,255,255,0.7);">Combined Annual AI Enhancement</div>
+            <div class="stat-num" style="color:#82CFFF;">$121,196</div>
+            <div class="stat-label" style="color:rgba(255,255,255,0.7);">Orchestrate: $81,196 licence + $40K implementation</div>
           </div>
         </div>
       </div>
       <div class="slide-footer">
-        <span>Woolworths 2026 IPA Renewal</span>
+        <span>IBM Data &amp; AI | Confidential</span>
         <img src="images/image28.png" alt="IBM" style="height:14px;filter:brightness(10);">
       </div>
     </div>
 
     <!-- ======================================================
-         SLIDE 12 — ROI Modelling Intro
-    ====================================================== -->
-    <div class="slide" id="slide-12" style="position:relative;overflow:hidden;">
-      <img src="images/image13.jpeg" alt="" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;" onerror="this.style.display='none'">
-      <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(120deg,rgba(0,45,156,0.92) 45%,rgba(0,45,156,0.6) 100%);z-index:1;"></div>
-      <div style="position:relative;z-index:2;display:flex;flex-direction:column;height:100%;padding:40px 48px;">
-        <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#82CFFF;margin-bottom:6px;">Business Case</div>
-        <div style="font-size:30px;font-weight:300;color:#fff;line-height:1.2;margin-bottom:4px;">ROI Modelling</div>
-        <div style="font-size:22px;font-weight:600;color:#82CFFF;margin-bottom:28px;">AI Investment</div>
-        <div style="background:rgba(255,255,255,0.12);border-left:4px solid #82CFFF;padding:14px 18px;max-width:500px;border-radius:2px;">
-          <div style="font-size:11px;color:rgba(255,255,255,0.6);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px;">Woolworths North Star</div>
-          <div style="font-size:14px;font-style:italic;color:#fff;line-height:1.5;">"We want to realise 50% in efficiencies with AI over the next 3 years using Planning Analytics."</div>
-        </div>
-        <div style="margin-top:28px;display:flex;flex-direction:column;gap:10px;">
-          <div style="display:flex;align-items:center;gap:10px;">
-            <div style="width:8px;height:8px;background:#82CFFF;border-radius:50%;flex-shrink:0;"></div>
-            <div style="font-size:13px;color:rgba(255,255,255,0.9);">Planning Analytics Agent</div>
-          </div>
-          <div style="display:flex;align-items:center;gap:10px;">
-            <div style="width:8px;height:8px;background:#82CFFF;border-radius:50%;flex-shrink:0;"></div>
-            <div style="font-size:13px;color:rgba(255,255,255,0.9);">Watsonx Orchestrate</div>
-          </div>
-          <div style="display:flex;align-items:center;gap:10px;">
-            <div style="width:8px;height:8px;background:#82CFFF;border-radius:50%;flex-shrink:0;"></div>
-            <div style="font-size:13px;color:rgba(255,255,255,0.9);">Bob</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ======================================================
-         SLIDE 13 — The Efficiency Mandate
+         SLIDE 13 — Where Watsonx Orchestrate Adds More
     ====================================================== -->
     <div class="slide" id="slide-13">
       <div class="slide-header">
-        <div class="header-tag">IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</div>
-        <h2>The Efficiency Mandate</h2>
-        <div class="slide-number">2/11</div>
+        <div class="header-tag">IBM Data &amp; AI | Confidential</div>
+        <h2>Where Watsonx Orchestrate adds more</h2>
+        <div class="slide-number">3</div>
       </div>
-      <div class="slide-body" style="flex-direction:row;gap:16px;padding:14px 20px;">
-        <!-- Left: North Star -->
-        <div style="width:180px;flex-shrink:0;display:flex;flex-direction:column;gap:10px;">
-          <div class="north-star-card" style="flex:1;">
-            <div style="font-size:10px;letter-spacing:1px;text-transform:uppercase;opacity:0.7;margin-bottom:4px;">Woolworths North Star</div>
-            <div style="font-size:72px;font-weight:300;color:#82CFFF;line-height:0.9;">50</div>
-            <div style="font-size:36px;font-weight:300;color:#82CFFF;line-height:1;">%</div>
-            <div style="font-size:11px;opacity:0.85;margin-top:6px;line-height:1.4;">Gain in efficiencies using<br>Planning Analytics</div>
-            <div style="font-size:10px;opacity:0.6;margin-top:3px;">Over 3 Years</div>
+      <div class="slide-body" style="flex-direction:row;gap:16px;padding:14px 22px;">
+        <!-- Intro -->
+        <div style="flex:1;display:flex;flex-direction:column;gap:10px;">
+          <div style="font-size:12px;color:#525252;line-height:1.6;border-left:3px solid #0F62FE;padding-left:10px;margin-bottom:6px;">
+            Agent and Bob save time inside their own tools. Orchestrate connects them, removing the handoffs between tools, teams and approvals.
+          </div>
+          <!-- Planning cycle -->
+          <div style="background:#f0f4ff;border-top:3px solid #0F62FE;padding:14px 16px;border-radius:2px;">
+            <div style="font-size:12px;font-weight:700;color:#002D9C;margin-bottom:6px;">Planning cycle</div>
+            <div style="font-size:11px;color:#525252;line-height:1.5;margin-bottom:8px;">Data requests, variance commentary, approvals and reporting handoffs run as one workflow.</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#0F62FE;font-weight:600;background:#e5f6ff;padding:6px 10px;border-radius:2px;">375 users × 0.25 hr × 48 wks = 4,500 hrs × $85 = <strong>$382,500</strong></div>
+          </div>
+          <!-- Dev lifecycle -->
+          <div style="background:#f0f4ff;border-top:3px solid #0F62FE;padding:14px 16px;border-radius:2px;">
+            <div style="font-size:12px;font-weight:700;color:#002D9C;margin-bottom:6px;">Development lifecycle</div>
+            <div style="font-size:11px;color:#525252;line-height:1.5;margin-bottom:8px;">Tickets, reviews, testing and release steps are routed automatically around Bob.</div>
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#0F62FE;font-weight:600;background:#e5f6ff;padding:6px 10px;border-radius:2px;">90 developers × 0.25 hr × 48 wks = 1,080 hrs × $100 = <strong>$108,000</strong></div>
           </div>
         </div>
-        <!-- Right: content -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:10px;">
-          <!-- Stats row -->
-          <div style="display:flex;gap:10px;">
-            <div class="stat-card" style="flex:1;">
-              <div class="stat-num">90</div>
-              <div class="stat-label">Developers — IBM Bob</div>
-            </div>
-            <div class="stat-card" style="flex:1;">
-              <div class="stat-num">750</div>
-              <div class="stat-label">Licensed Finance &amp; Planning Users</div>
-            </div>
-            <div class="stat-card" style="flex:1;">
-              <div class="stat-num">~98%</div>
-              <div class="stat-label">of PA effort currently manual</div>
-            </div>
+        <!-- Right: summary metrics -->
+        <div style="width:240px;flex-shrink:0;display:flex;flex-direction:column;gap:10px;">
+          <div style="font-size:11px;font-weight:700;color:#002D9C;margin-bottom:2px;">Orchestrate summary</div>
+          <div class="metric-row"><span class="m-label">Total benefit</span><span class="m-value">$490,500</span></div>
+          <div class="metric-row"><span class="m-label">Cost (licence + impl.)</span><span class="m-value">$121,196</span></div>
+          <div class="metric-row"><span class="m-label">Net return</span><span class="m-value">$369,304</span></div>
+          <div style="text-align:center;margin-top:8px;">
+            <div style="font-size:38px;font-weight:300;color:#0F62FE;">305%</div>
+            <div style="font-size:10px;color:#525252;">ROI · Payback 3.0 months</div>
           </div>
-          <!-- Key points -->
-          <div style="background:#fff;border:1px solid #e0e0e0;padding:12px 14px;border-radius:2px;flex:1;">
-            <p style="font-size:11px;color:#525252;line-height:1.55;margin-bottom:8px;">Woolworths has formally stated its North Star: <strong>"50% Gain in efficiencies using Planning Analytics over the next 3 years"</strong> — a bold operational target requiring AI-led automation at scale.</p>
-            <p style="font-size:11px;color:#525252;line-height:1.55;margin-bottom:8px;">~98% of Planning Analytics effort today remains manual — the automation headroom is enormous and the 50% target is achievable within conservative modelling.</p>
-            <p style="font-size:11px;color:#525252;line-height:1.55;margin-bottom:8px;">Two IBM solutions address both ends of the Woolworths workforce: <strong>IBM Bob</strong> targets 90 developers; the <strong>Planning Analytics Agent Add-On</strong> targets 750 licensed finance and planning users.</p>
-            <p style="font-size:11px;color:#525252;line-height:1.55;">Together they form a unified efficiency play — one investment envelope, one strategic narrative, one 3-year return path toward the 50% mandate.</p>
+          <div style="background:#e5f6ff;border:1px solid #82CFFF;padding:10px 12px;border-radius:4px;font-size:10.5px;color:#525252;line-height:1.5;margin-top:6px;">
+            Equal to <strong>15 minutes a week</strong> for each of the 465 users already in the model, covering workflow handoffs not counted in the Agent or Bob figures.
           </div>
         </div>
       </div>
       <div class="slide-footer">
-        <span>IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</span>
-        <span>2 / 11</span>
+        <span>IBM Data &amp; AI | Confidential</span>
+        <img src="images/image28.png" alt="IBM" style="height:14px;filter:brightness(10);">
       </div>
     </div>
 
     <!-- ======================================================
-         SLIDE 14 — Two Models, One Investment Case
+         SLIDE 14 — How the hours connect to 50%
     ====================================================== -->
     <div class="slide" id="slide-14">
       <div class="slide-header">
-        <div class="header-tag">IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</div>
-        <h2>Two Models, One Investment Case</h2>
-        <div class="slide-number">3</div>
+        <div class="header-tag">IBM Data &amp; AI | Confidential</div>
+        <h2>How the hours connect to 50%</h2>
+        <div class="slide-number">4</div>
       </div>
-      <div class="slide-body" style="padding:12px 18px;gap:8px;">
-        <div style="font-size:11px;color:#525252;font-style:italic;margin-bottom:2px;">At a combined annual outlay of $271,797 AUD, the two solutions deliver ~$1.46M net in Year 1 — a blended ROI of ~537% with both payback periods under 9 weeks.</div>
-        <div class="two-col" style="gap:12px;flex:1;">
-          <!-- IBM Bob -->
-          <div class="col">
-            <div class="col-header">IBM Bob — Developer Productivity</div>
-            <div class="col-body" style="padding:10px 12px;">
-              <div style="font-size:11px;color:#525252;margin-bottom:8px;font-weight:500;">90 Developers in Scope</div>
-              <div class="metric-row"><span class="m-label">Annual Cost</span><span class="m-value">$150,000 AUD</span></div>
-              <div class="metric-row"><span class="m-label">Annual Benefit (Base)</span><span class="m-value">~$814,000 AUD</span></div>
-              <div class="metric-row"><span class="m-label">Net Return</span><span class="m-value">~$664,000 AUD</span></div>
-              <div style="margin-top:10px;text-align:center;">
-                <div style="font-size:38px;font-weight:300;color:#0F62FE;">~443%</div>
-                <div style="font-size:10px;color:#525252;">Base Case ROI · Payback: ~9 weeks</div>
-              </div>
-              <div style="margin-top:8px;font-size:10px;color:#525252;font-weight:600;">Scenario Range</div>
-              <div class="scenario-strip" style="margin-top:4px;">
-                <div class="scen-seg down"><span class="scen-pct">~215%</span><span>Downside</span></div>
-                <div class="scen-seg base"><span class="scen-pct">~443%</span><span>Base</span></div>
-                <div class="scen-seg up"><span class="scen-pct">~2,003%</span><span>Headline</span></div>
-              </div>
+      <div class="slide-body" style="gap:10px;padding:14px 22px;">
+        <div style="font-size:10.5px;color:#525252;font-style:italic;margin-bottom:4px;">Efficiency = hours released / time planning and finance users spend on forecasting, reporting and data prep (750 users × 8 hrs per week × 48 weeks = 288,000 hours).</div>
+        <!-- Main table -->
+        <table class="data-table" style="font-size:11.5px;">
+          <thead>
+            <tr>
+              <th style="width:40%;"></th>
+              <th style="text-align:center;">Year 1</th>
+              <th style="text-align:center;">Year 2</th>
+              <th style="text-align:center;">Year 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Active users</td><td style="text-align:center;">375 (50%)</td><td style="text-align:center;">563 (75%)</td><td style="text-align:center;">750 (100%)</td></tr>
+            <tr><td>Agent: hrs released per user per week</td><td style="text-align:center;">2</td><td style="text-align:center;">3</td><td style="text-align:center;">4</td></tr>
+            <tr><td>Orchestrate: added hrs per user per week</td><td style="text-align:center;">+1</td><td style="text-align:center;">+1</td><td style="text-align:center;">+1</td></tr>
+            <tr><td>Hours released per year (with Orchestrate)</td><td style="text-align:center;font-weight:600;">54,000</td><td style="text-align:center;font-weight:600;">108,000</td><td style="text-align:center;font-weight:600;">180,000</td></tr>
+            <tr><td>Efficiency gain, Agent only</td><td style="text-align:center;">12.5%</td><td style="text-align:center;">28%</td><td style="text-align:center;color:#24A148;font-weight:700;">50%</td></tr>
+            <tr class="total-row"><td>Efficiency gain, with Orchestrate</td><td style="text-align:center;">18.8%</td><td style="text-align:center;">37.5%</td><td style="text-align:center;color:#24A148;font-weight:700;">62.5%</td></tr>
+          </tbody>
+        </table>
+        <!-- Visual trajectory -->
+        <div style="margin-top:10px;">
+          <div style="font-size:11px;font-weight:600;color:#002D9C;margin-bottom:8px;">Efficiency trajectory vs. 50% North Star</div>
+          <div class="traj-bar">
+            <div class="yr">Year 1</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width:25%;background:#0F62FE;">12.5% Agent</div>
+            </div>
+            <div class="bar-track" style="margin-left:4px;">
+              <div class="bar-fill" style="width:37.6%;background:#009D9A;">18.8% +Orchestrate</div>
             </div>
           </div>
-          <!-- PA Agent -->
-          <div class="col">
-            <div class="col-header">Planning Analytics Agent Add-On</div>
-            <div class="col-body" style="padding:10px 12px;">
-              <div style="font-size:11px;color:#525252;margin-bottom:8px;font-weight:500;">750 Licensed Users (375 Active Yr 1)</div>
-              <div class="metric-row"><span class="m-label">Annual Cost</span><span class="m-value">$121,797 AUD</span></div>
-              <div class="metric-row"><span class="m-label">Annual Benefit (Base)</span><span class="m-value">~$918,000 AUD</span></div>
-              <div class="metric-row"><span class="m-label">Net Return</span><span class="m-value">~$796,000 AUD</span></div>
-              <div style="margin-top:10px;text-align:center;">
-                <div style="font-size:38px;font-weight:300;color:#0F62FE;">~654%</div>
-                <div style="font-size:10px;color:#525252;">Base Case ROI · Payback: ~8 weeks</div>
-              </div>
-              <div style="margin-top:8px;font-size:10px;color:#525252;font-weight:600;">Scenario Range</div>
-              <div class="scenario-strip" style="margin-top:4px;">
-                <div class="scen-seg down"><span class="scen-pct">~108%</span><span>Conservative</span></div>
-                <div class="scen-seg base"><span class="scen-pct">~654%</span><span>Base</span></div>
-                <div class="scen-seg up"><span class="scen-pct">~1,854%</span><span>Aggressive</span></div>
-              </div>
+          <div class="traj-bar" style="margin-top:6px;">
+            <div class="yr">Year 2</div>
+            <div class="bar-track">
+              <div class="bar-fill" style="width:56%;background:#0F62FE;">28% Agent</div>
+            </div>
+            <div class="bar-track" style="margin-left:4px;">
+              <div class="bar-fill" style="width:75%;background:#009D9A;">37.5% +Orchestrate</div>
             </div>
           </div>
-          <!-- Combined -->
-          <div class="col" style="max-width:200px;">
-            <div class="col-header" style="background:#001d6c;">Combined Unified Value</div>
-            <div class="col-body" style="background:#f0f4ff;border-color:#82CFFF;padding:10px 12px;">
-              <div class="metric-row"><span class="m-label" style="font-size:10px;">Total Investment</span><span class="m-value">$271,797</span></div>
-              <div class="metric-row"><span class="m-label" style="font-size:10px;">Total Benefit</span><span class="m-value">~$1,732,000</span></div>
-              <div class="metric-row"><span class="m-label" style="font-size:10px;">Net Return — Yr 1</span><span class="m-value">~$1,460,000</span></div>
-              <div style="margin-top:12px;text-align:center;">
-                <div style="font-size:38px;font-weight:300;color:#002D9C;">~537%</div>
-                <div style="font-size:10px;color:#525252;">Blended ROI</div>
-              </div>
-              <div style="display:flex;gap:6px;margin-top:8px;justify-content:center;flex-wrap:wrap;">
-                <span style="font-size:9px;background:#002D9C;color:white;padding:2px 6px;border-radius:10px;">Bob: ~9 wks</span>
-                <span style="font-size:9px;background:#002D9C;color:white;padding:2px 6px;border-radius:10px;">Agent: ~8 wks</span>
-              </div>
+          <div class="traj-bar" style="margin-top:6px;">
+            <div class="yr">Year 3</div>
+            <div class="bar-track">
+              <div class="bar-fill target" style="width:100%;">★ 50% Agent target</div>
+            </div>
+            <div class="bar-track" style="margin-left:4px;">
+              <div class="bar-fill" style="width:100%;background:#009D9A;">62.5% +Orchestrate</div>
             </div>
           </div>
+        </div>
+        <div style="display:flex;gap:10px;margin-top:4px;font-size:10px;color:#525252;">
+          <span style="display:flex;align-items:center;gap:4px;"><span style="width:12px;height:10px;background:#0F62FE;border-radius:1px;display:inline-block;"></span> Agent only</span>
+          <span style="display:flex;align-items:center;gap:4px;"><span style="width:12px;height:10px;background:#009D9A;border-radius:1px;display:inline-block;"></span> Agent + Orchestrate</span>
         </div>
       </div>
       <div class="slide-footer">
-        <span>IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</span>
-        <span>3</span>
-      </div>
-    </div>
-
-    <!-- ======================================================
-         SLIDE 15 — The Math Explained
-    ====================================================== -->
-    <div class="slide" id="slide-15">
-      <div class="slide-header">
-        <div class="header-tag">IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</div>
-        <h2>The Math Explained</h2>
-        <div class="slide-number">4/11</div>
-      </div>
-      <div class="slide-body" style="flex-direction:row;gap:14px;padding:12px 18px;">
-        <!-- Section 1 -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:8px;">
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
-            <div class="step-num" style="width:26px;height:26px;font-size:13px;">1</div>
-            <div style="font-size:12px;font-weight:600;color:#002D9C;">The ROI Formula</div>
-          </div>
-          <div class="formula-box">ROI % = (Net Return ÷ Annual Investment) × 100</div>
-          <div style="font-size:11px;color:#525252;line-height:1.5;">
-            <div><strong>Agent:</strong> ($796K ÷ $121,797) × 100 = <span style="color:#0F62FE;font-weight:600;">~654%</span></div>
-            <div style="margin-top:4px;"><strong>IBM Bob:</strong> ($664K ÷ $150,000) × 100 = <span style="color:#0F62FE;font-weight:600;">~443%</span></div>
-            <div style="margin-top:4px;"><strong>Blended:</strong> ($1,460K ÷ $271,797) × 100 = <span style="color:#002D9C;font-weight:600;">~537%</span></div>
-          </div>
-          <div style="margin-top:4px;font-size:10px;background:#e5f6ff;border-left:3px solid #0F62FE;padding:5px 8px;border-radius:2px;color:#525252;">
-            Both solutions recover investment within 9 weeks
-          </div>
-        </div>
-        <!-- Section 2 -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:8px;">
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
-            <div class="step-num" style="width:26px;height:26px;font-size:13px;">2</div>
-            <div style="font-size:12px;font-weight:600;color:#002D9C;">Payback Period Formula</div>
-          </div>
-          <div class="formula-box">Payback (weeks) = (Annual Cost ÷ Annual Benefit) × 52</div>
-          <div style="font-size:11px;color:#525252;line-height:1.5;">
-            <div><strong>Agent:</strong> ($121,797 ÷ $918,000) × 52 = <span style="color:#0F62FE;font-weight:600;">~6.9 wks ≈ 8 wks</span> <em style="font-size:10px;">(ramp-adjusted)</em></div>
-            <div style="margin-top:4px;"><strong>IBM Bob:</strong> ($150,000 ÷ $814,000) × 52 = <span style="color:#0F62FE;font-weight:600;">~9.6 wks ≈ 9 wks</span></div>
-          </div>
-        </div>
-        <!-- Section 3 -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:8px;">
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
-            <div class="step-num" style="width:26px;height:26px;font-size:13px;">3</div>
-            <div style="font-size:12px;font-weight:600;color:#002D9C;">From $ Savings to Hours Released</div>
-          </div>
-          <div style="font-size:11px;color:#525252;line-height:1.6;">
-            <div>~10,800 hrs/yr — Agent (~$918K ÷ $85/hr, at 15% realisation)</div>
-            <div style="margin-top:4px;">~8,140 hrs/yr — IBM Bob (~$814K ÷ $100/hr developer rate)</div>
-            <div style="margin-top:6px;font-weight:600;color:#002D9C;">Combined: ~18,940 hours/year</div>
-          </div>
-          <div style="font-size:10px;color:#525252;font-style:italic;">Gross hours released: 72,000 hrs/yr (Agent) — realisation factor converts gross to net</div>
-        </div>
-        <!-- Section 4 -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:8px;">
-          <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
-            <div class="step-num" style="width:26px;height:26px;font-size:13px;">4</div>
-            <div style="font-size:12px;font-weight:600;color:#002D9C;">From Hours to Efficiency %</div>
-          </div>
-          <div class="formula-box">Efficiency % = Hours Released ÷ Total Manual Hours</div>
-          <div style="display:flex;flex-direction:column;gap:6px;margin-top:4px;">
-            <div class="traj-bar">
-              <div class="yr">Yr 1</div>
-              <div class="bar-track"><div class="bar-fill" style="width:11%;">5.7%</div></div>
-            </div>
-            <div class="traj-bar">
-              <div class="yr">Yr 2</div>
-              <div class="bar-track"><div class="bar-fill" style="width:44%;">~20–25%</div></div>
-            </div>
-            <div class="traj-bar">
-              <div class="yr">Yr 3</div>
-              <div class="bar-track"><div class="bar-fill target" style="width:100%;">50% ★</div></div>
-            </div>
-          </div>
-          <div style="font-size:10px;color:#525252;font-style:italic;margin-top:2px;">ROI% ≠ Efficiency% — different metrics, same direction</div>
-        </div>
-      </div>
-      <div class="slide-footer">
-        <span>IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</span>
-        <span>4 / 11</span>
-      </div>
-    </div>
-
-    <!-- ======================================================
-         SLIDE 16 — PA Agent Add-On Deep Dive
-    ====================================================== -->
-    <div class="slide" id="slide-16">
-      <div class="slide-header">
-        <div class="header-tag">IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</div>
-        <h2>Planning Analytics Agent Add-On: Deep-Dive</h2>
-        <div class="slide-number">5/11</div>
-      </div>
-      <div class="slide-body" style="flex-direction:row;gap:16px;padding:12px 18px;">
-        <!-- Left: calculation -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:6px;">
-          <div style="font-size:11px;font-weight:600;color:#002D9C;margin-bottom:4px;">The Bottom-Up Calculation — Step by Step</div>
-          <div class="step-item">
-            <div class="step-num">1</div>
-            <div class="step-content">
-              <div class="step-title">750 licensed users × 50% Year 1 adoption</div>
-              <div class="step-result">= 375 active users</div>
-            </div>
-          </div>
-          <div class="step-item">
-            <div class="step-num">2</div>
-            <div class="step-content">
-              <div class="step-title">375 users × 4 hrs/week × 48 productive weeks</div>
-              <div class="step-result">= 72,000 gross hours released/year</div>
-            </div>
-          </div>
-          <div class="step-item">
-            <div class="step-num">3</div>
-            <div class="step-content">
-              <div class="step-title">72,000 hrs × $85/hr (blended loaded rate)</div>
-              <div class="step-result">= $6,120,000 gross time value</div>
-            </div>
-          </div>
-          <div class="step-item">
-            <div class="step-num">4</div>
-            <div class="step-content">
-              <div class="step-title">$6,120,000 × 15% realisation factor</div>
-              <div class="step-result">= ~$918,000 net benefit</div>
-            </div>
-          </div>
-          <div class="step-item">
-            <div class="step-num">5</div>
-            <div class="step-content">
-              <div class="step-title">$918,000 − $121,797 annual cost</div>
-              <div class="step-result">= ~$796,000 net return → <strong>~654% ROI</strong></div>
-            </div>
-          </div>
-          <div style="font-size:10px;color:#525252;font-style:italic;background:#f4f4f4;padding:6px 8px;border-radius:2px;margin-top:4px;">
-            <strong>Why 15% Realisation?</strong> Not all saved hours convert to direct cash savings — some redirect to higher-value analysis. 15% is deliberately conservative; 20% (Aggressive) assumes an active redeployment programme.
-          </div>
-        </div>
-        <!-- Right: use case split + scenario table -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:10px;">
-          <div style="font-size:11px;font-weight:600;color:#002D9C;margin-bottom:4px;">Use Case Split — 4 hrs/user/week (Base Case)</div>
-          <div class="use-case-row">
-            <div class="uc-label">Forecast &amp; Scenario Modelling</div>
-            <div class="uc-bar"><div class="uc-fill" style="width:50%;"></div></div>
-            <div class="uc-hrs">2.00 hrs</div>
-          </div>
-          <div class="use-case-row">
-            <div class="uc-label">Variance &amp; Exception Reporting</div>
-            <div class="uc-bar"><div class="uc-fill" style="width:25%;"></div></div>
-            <div class="uc-hrs">1.00 hr</div>
-          </div>
-          <div class="use-case-row">
-            <div class="uc-label">Data Prep &amp; ETL</div>
-            <div class="uc-bar"><div class="uc-fill" style="width:18.75%;"></div></div>
-            <div class="uc-hrs">0.75 hrs</div>
-          </div>
-          <div class="use-case-row">
-            <div class="uc-label">Insight &amp; Ad-hoc Queries</div>
-            <div class="uc-bar"><div class="uc-fill" style="width:6.25%;"></div></div>
-            <div class="uc-hrs">0.25 hrs</div>
-          </div>
-          <div style="font-size:11px;font-weight:600;color:#002D9C;margin-top:8px;margin-bottom:4px;">Scenario Range</div>
-          <table class="data-table" style="font-size:10.5px;">
-            <thead>
-              <tr><th>Metric</th><th>Conservative</th><th>Base Case</th><th>Aggressive</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Annual Agent Cost (AUD)</td><td class="money">$121,797</td><td class="money">$121,797</td><td class="money">$121,797</td></tr>
-              <tr><td>Total Benefit (AUD)</td><td class="money">~$253,000</td><td class="money">~$918,000</td><td class="money">~$2,379,000</td></tr>
-              <tr><td>Net Return (AUD)</td><td class="money">~$131,000</td><td class="money">~$796,000</td><td class="money">~$2,257,000</td></tr>
-              <tr><td>ROI %</td><td class="money">~108%</td><td class="money" style="color:#0F62FE;font-weight:700;">~654%</td><td class="money">~1,854%</td></tr>
-              <tr><td>Payback Period</td><td class="money">~23 months</td><td class="money">~8 weeks</td><td class="money">~3 weeks</td></tr>
-            </tbody>
-          </table>
-          <div style="font-size:9.5px;color:#525252;font-style:italic;margin-top:4px;">Conservative: 25% adoption (188 users), 3 hrs/week saved, $75/hr, 10% realisation → ~$253K benefit. Woolworths Group FY26 revenue ~AUD $71.5B.</div>
-        </div>
-      </div>
-      <div class="slide-footer">
-        <span>IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</span>
-        <span>5 / 11</span>
-      </div>
-    </div>
-
-    <!-- ======================================================
-         SLIDE 17 — IBM Bob Deep-Dive
-    ====================================================== -->
-    <div class="slide" id="slide-17">
-      <div class="slide-header">
-        <div class="header-tag">IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</div>
-        <h2>IBM Bob Deep-Dive — 5 Value Dimensions</h2>
-        <div class="slide-number">6/11</div>
-      </div>
-      <div class="slide-body" style="flex-direction:row;gap:16px;padding:12px 18px;">
-        <!-- Left: 5 dimensions -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:4px;">
-          <div style="font-size:11px;font-weight:600;color:#002D9C;margin-bottom:2px;">Conservative Scaling — 5 Value Dimensions</div>
-          <div style="font-size:10.5px;color:#525252;margin-bottom:8px;background:#f4f4f4;padding:5px 8px;border-radius:2px;">90 developers × 1,980 hrs/yr × $100/hr = <strong>$17,820,000</strong> total developer cost pool</div>
-          <div class="value-dim">
-            <div class="vd-num">1</div>
-            <div>
-              <div class="vd-title">Documentation <span style="font-size:9px;background:#defbe6;color:#0e6027;padding:1px 5px;border-radius:10px;margin-left:4px;">POC Confirmed</span></div>
-              <div class="vd-detail">10% dev hrs × 50% AI reduction × 25% realisation = $31,200/yr — empirically validated anchor</div>
-            </div>
-          </div>
-          <div class="value-dim">
-            <div class="vd-num">2</div>
-            <div>
-              <div class="vd-title">Coding</div>
-              <div class="vd-detail">30% of dev hrs × 45% AI reduction × 25% scaling applied</div>
-            </div>
-          </div>
-          <div class="value-dim">
-            <div class="vd-num">3</div>
-            <div>
-              <div class="vd-title">Legacy Skills Retention</div>
-              <div class="vd-detail">25% scaling applied to calculator figure</div>
-            </div>
-          </div>
-          <div class="value-dim">
-            <div class="vd-num">4</div>
-            <div>
-              <div class="vd-title">Modernisation (SI/COBOL) <span style="font-size:9px;background:#ffe0e0;color:#a12424;padding:1px 5px;border-radius:10px;margin-left:4px;">Indicative</span></div>
-              <div class="vd-detail">30% scaling; highest-uncertainty dimension — treat as indicative only</div>
-            </div>
-          </div>
-          <div class="value-dim">
-            <div class="vd-num">5</div>
-            <div>
-              <div class="vd-title">Developer Capacity / Delivery Speed</div>
-              <div class="vd-detail">25% scaling applied to calculator figure</div>
-            </div>
-          </div>
-        </div>
-        <!-- Right: Scenario table -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:10px;">
-          <div style="font-size:11px;font-weight:600;color:#002D9C;margin-bottom:4px;">Scenario Range</div>
-          <table class="data-table" style="font-size:10.5px;">
-            <thead>
-              <tr><th>Metric</th><th>Downside (15%)</th><th>Base Conservative (25–30%)</th><th>Calculator Headline</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>Annual IBM Bob Cost (AUD)</td><td class="money">$150,000</td><td class="money">$150,000</td><td class="money">$150,000</td></tr>
-              <tr><td>Total Benefit (AUD)</td><td class="money">~$473,000</td><td class="money">~$814,000</td><td class="money">$3,154,175</td></tr>
-              <tr><td>Net Return (AUD)</td><td class="money">~$323,000</td><td class="money">~$664,000</td><td class="money">~$3,004,000</td></tr>
-              <tr><td>ROI %</td><td class="money">~215%</td><td class="money" style="color:#0F62FE;font-weight:700;">~443%</td><td class="money">~2,003%</td></tr>
-              <tr><td>Payback Period</td><td>~4 months</td><td>~9 weeks</td><td>~2 weeks</td></tr>
-            </tbody>
-          </table>
-          <div style="margin-top:8px;">
-            <div style="font-size:11px;font-weight:600;color:#002D9C;margin-bottom:6px;">IBM Bob Scenario Visualisation</div>
-            <div class="traj-bar">
-              <div class="yr" style="width:80px;">Downside</div>
-              <div class="bar-track"><div class="bar-fill" style="width:10.7%;">~215%</div></div>
-            </div>
-            <div class="traj-bar">
-              <div class="yr" style="width:80px;">Base</div>
-              <div class="bar-track"><div class="bar-fill" style="width:22.1%;">~443%</div></div>
-            </div>
-            <div class="traj-bar">
-              <div class="yr" style="width:80px;">Headline</div>
-              <div class="bar-track"><div class="bar-fill target" style="width:100%;">~2,003%</div></div>
-            </div>
-          </div>
-          <div style="display:flex;align-items:center;gap:10px;margin-top:8px;background:#f0f4ff;padding:8px 10px;border-radius:2px;">
-            <img src="images/image33.png" alt="Bob" style="height:36px;width:36px;object-fit:contain;" onerror="this.style.display='none'">
-            <div style="font-size:10.5px;color:#525252;line-height:1.4;">IBM Bob's ~$814K base benefit is built from five value dimensions, each scaled to 25–30% of the IBM calculator, deliberately conservative, anchored by a POC-confirmed documentation result of $31,200.</div>
-          </div>
-        </div>
-      </div>
-      <div class="slide-footer">
-        <span>IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</span>
-        <span>6 / 11</span>
-      </div>
-    </div>
-
-    <!-- ======================================================
-         SLIDE 18 — 3-Year Horizon
-    ====================================================== -->
-    <div class="slide" id="slide-18">
-      <div class="slide-header">
-        <div class="header-tag">IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</div>
-        <h2>3-Year Horizon</h2>
-        <div class="slide-number">7/11</div>
-      </div>
-      <div class="slide-body" style="flex-direction:row;gap:16px;padding:14px 20px;">
-        <!-- Left: year progression -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:10px;">
-          <div style="font-size:11px;color:#525252;font-style:italic;margin-bottom:4px;">Over three years, the combined IBM investment is projected to deliver ~$5.2M in cumulative net return — a financially grounded pathway to Woolworths' 50% efficiency target.</div>
-          <div class="year-card">
-            <div class="year-label">Year 1</div>
-            <div class="year-amount">~$1.46M</div>
-            <div class="year-desc">
-              <div style="font-weight:600;color:#002D9C;font-size:11px;">Adoption Ramp</div>
-              <div>375 of 750 PA users active; IBM Bob scaling across dev dimensions</div>
-            </div>
-          </div>
-          <div class="year-card" style="border-left-color:#0F62FE;">
-            <div class="year-label" style="color:#0F62FE;">Year 2</div>
-            <div class="year-amount">~$1.73M</div>
-            <div class="year-desc">
-              <div style="font-weight:600;color:#002D9C;font-size:11px;">Full Adoption Builds</div>
-              <div>Planning users at target; developer productivity compounds as modernisation matures</div>
-            </div>
-          </div>
-          <div class="year-card" style="border-left-color:#24A148;">
-            <div class="year-label" style="color:#24A148;">Year 3</div>
-            <div class="year-amount">~$2.01M</div>
-            <div class="year-desc">
-              <div style="font-weight:600;color:#002D9C;font-size:11px;">Platform-Developer Flywheel</div>
-              <div>Both communities fully AI-assisted; workflows and modernisation at full maturity</div>
-            </div>
-          </div>
-          <!-- Cumulative total -->
-          <div style="background:#002D9C;color:#fff;padding:12px 16px;border-radius:2px;display:flex;justify-content:space-between;align-items:center;">
-            <div>
-              <div style="font-size:10px;opacity:0.7;text-transform:uppercase;letter-spacing:0.5px;">3-Year Cumulative Net Return</div>
-              <div style="font-size:10px;opacity:0.6;">Conservative base model · AUD</div>
-            </div>
-            <div style="font-size:32px;font-weight:300;color:#82CFFF;">~$5.2M</div>
-          </div>
-          <div style="font-size:10px;color:#525252;font-style:italic;">Additional unmodelised upside: forecast accuracy improvements not monetised in base model represent further upside for a $71.5B retailer.</div>
-        </div>
-        <!-- Right: chart visualisation -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:8px;">
-          <div style="font-size:11px;font-weight:600;color:#002D9C;margin-bottom:6px;">Net Return Ramp (AUD) — Annual &amp; Cumulative</div>
-          <!-- Simple SVG bar chart -->
-          <svg viewBox="0 0 400 260" style="width:100%;max-height:260px;" xmlns="http://www.w3.org/2000/svg">
-            <!-- Grid lines -->
-            <line x1="60" y1="20" x2="60" y2="220" stroke="#e0e0e0" stroke-width="1"/>
-            <line x1="60" y1="220" x2="380" y2="220" stroke="#e0e0e0" stroke-width="1"/>
-            <line x1="60" y1="160" x2="380" y2="160" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4,2"/>
-            <line x1="60" y1="110" x2="380" y2="110" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4,2"/>
-            <line x1="60" y1="60" x2="380" y2="60" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4,2"/>
-            <!-- Y-axis labels -->
-            <text x="55" y="225" text-anchor="end" font-size="9" fill="#888">$0</text>
-            <text x="55" y="165" text-anchor="end" font-size="9" fill="#888">$1M</text>
-            <text x="55" y="115" text-anchor="end" font-size="9" fill="#888">$2M</text>
-            <text x="55" y="65" text-anchor="end" font-size="9" fill="#888">$3M</text>
-            <!-- Annual bars -->
-            <rect x="80" y="147" width="60" height="73" fill="#0F62FE" opacity="0.85" rx="2"/>
-            <text x="110" y="143" text-anchor="middle" font-size="9" fill="#0F62FE" font-weight="600">$1.46M</text>
-            <rect x="180" y="133" width="60" height="87" fill="#0F62FE" opacity="0.85" rx="2"/>
-            <text x="210" y="129" text-anchor="middle" font-size="9" fill="#0F62FE" font-weight="600">$1.73M</text>
-            <rect x="280" y="118" width="60" height="102" fill="#0F62FE" opacity="0.85" rx="2"/>
-            <text x="310" y="114" text-anchor="middle" font-size="9" fill="#0F62FE" font-weight="600">$2.01M</text>
-            <!-- Cumulative line -->
-            <polyline points="110,147 210,100 310,60" stroke="#002D9C" stroke-width="2.5" fill="none"/>
-            <circle cx="110" cy="147" r="4" fill="#002D9C"/>
-            <circle cx="210" cy="100" r="4" fill="#002D9C"/>
-            <circle cx="310" cy="60" r="4" fill="#002D9C"/>
-            <text x="310" y="52" text-anchor="middle" font-size="9" fill="#002D9C" font-weight="600">~$5.2M cum.</text>
-            <!-- X labels -->
-            <text x="110" y="235" text-anchor="middle" font-size="10" fill="#525252" font-weight="600">Year 1</text>
-            <text x="210" y="235" text-anchor="middle" font-size="10" fill="#525252" font-weight="600">Year 2</text>
-            <text x="310" y="235" text-anchor="middle" font-size="10" fill="#525252" font-weight="600">Year 3</text>
-            <!-- Legend -->
-            <rect x="65" y="248" width="12" height="8" fill="#0F62FE" opacity="0.85" rx="1"/>
-            <text x="80" y="256" font-size="8" fill="#525252">Annual Net Return</text>
-            <line x1="165" y1="252" x2="185" y2="252" stroke="#002D9C" stroke-width="2.5"/>
-            <circle cx="175" cy="252" r="3" fill="#002D9C"/>
-            <text x="190" y="256" font-size="8" fill="#525252">Cumulative</text>
-          </svg>
-          <div style="font-size:9px;color:#8D8D8D;font-style:italic;">Source: ROI AI Investment Pres.pptx</div>
-        </div>
-      </div>
-      <div class="slide-footer">
-        <span>IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</span>
-        <span>7 / 11</span>
-      </div>
-    </div>
-
-    <!-- ======================================================
-         SLIDE 19 — Assumption Audit
-    ====================================================== -->
-    <div class="slide" id="slide-19">
-      <div class="slide-header">
-        <div class="header-tag">IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</div>
-        <h2>Assumption Audit</h2>
-        <div class="slide-number">8/11</div>
-      </div>
-      <div class="slide-body" style="flex-direction:column;gap:8px;padding:10px 16px;">
-        <!-- Legend -->
-        <div style="display:flex;gap:10px;font-size:9.5px;padding-bottom:4px;border-bottom:1px solid #e0e0e0;">
-          <span class="conf-high">● High — Confirmed</span>
-          <span class="conf-med">● Med — Estimate</span>
-          <span class="conf-low">● Low — Indicative</span>
-        </div>
-        <div style="flex:1;display:flex;gap:14px;overflow:hidden;">
-        <!-- Left: PA Agent -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:6px;">
-          <div style="font-size:11px;font-weight:600;color:#002D9C;margin-bottom:4px;">Planning Analytics Agent Add-On</div>
-          <table class="assumption-table">
-            <thead>
-              <tr><th>#</th><th>Input</th><th>Value Used</th><th>Conf.</th><th>Flag</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>A1</td><td>Annual agent add-on cost</td><td>$121,797</td><td><span class="conf-high">High</span></td><td style="font-size:9.5px;">Confirmed</td></tr>
-              <tr><td>A2</td><td>Total licensed users</td><td>750</td><td><span class="conf-high">High</span></td><td style="font-size:9.5px;">Confirmed</td></tr>
-              <tr><td>A3</td><td>Year 1 adoption rate</td><td>25% / 50% / 70%</td><td><span class="conf-med">Med</span></td><td style="font-size:9.5px;">PLACEHOLDER — replace with rollout plan</td></tr>
-              <tr><td>A4</td><td>Hours saved per user/week</td><td>3 / 4 / 5 hrs</td><td><span class="conf-med">Med</span></td><td style="font-size:9.5px;">ESTIMATE — validate with time-study</td></tr>
-              <tr><td>A5</td><td>Working weeks/year</td><td>48 weeks</td><td><span class="conf-high">High</span></td><td style="font-size:9.5px;">Confirmed (Australian context)</td></tr>
-              <tr><td>A6</td><td>Loaded hourly rate (AUD)</td><td>$75 / $85 / $95</td><td><span class="conf-med">Med</span></td><td style="font-size:9.5px;">PLACEHOLDER — replace with salary data</td></tr>
-              <tr><td>A7</td><td>Benefit realisation factor</td><td>10% / 15% / 20%</td><td><span class="conf-med">Med</span></td><td style="font-size:9.5px;">ESTIMATE — subject to HR/finance policy</td></tr>
-              <tr><td>A10</td><td>Baseline manual effort</td><td>~98% of PA is manual</td><td><span class="conf-high">High</span></td><td style="font-size:9.5px;">Confirmed (workshop)</td></tr>
-              <tr><td>A11</td><td>Forecast accuracy improvement</td><td>Not monetised</td><td><span class="conf-low">Low</span></td><td style="font-size:9.5px;">EXCLUDED — add if $/% value available</td></tr>
-            </tbody>
-          </table>
-          <div style="font-size:9px;color:#8D8D8D;font-style:italic;margin-top:2px;">Source: ROI AI Investment Pres.pptx</div>
-        </div>
-        <!-- Right: Bob -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:6px;">
-          <div style="font-size:11px;font-weight:600;color:#002D9C;margin-bottom:4px;">IBM Bob — Developer Productivity</div>
-          <table class="assumption-table">
-            <thead>
-              <tr><th>#</th><th>Input</th><th>Value Used</th><th>Conf.</th><th>Flag</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>A1</td><td>Annual IBM Bob cost (AUD)</td><td>$150,000</td><td><span class="conf-high">High</span></td><td style="font-size:9.5px;">Confirmed</td></tr>
-              <tr><td>A2</td><td>Developers in scope</td><td>90</td><td><span class="conf-high">High</span></td><td style="font-size:9.5px;">Confirmed</td></tr>
-              <tr><td>A3</td><td>Blended developer rate (AUD/hr)</td><td>$100/hr</td><td><span class="conf-med">Med</span></td><td style="font-size:9.5px;">PLACEHOLDER — validate with Woolworths</td></tr>
-              <tr><td>A8</td><td>Documentation time reduction</td><td>50% (POC)</td><td><span class="conf-high">High</span></td><td style="font-size:9.5px;">Confirmed via POC</td></tr>
-              <tr><td>A10</td><td>Coding time reduction</td><td>45% (scaled 25%)</td><td><span class="conf-med">Med</span></td><td style="font-size:9.5px;">ESTIMATE</td></tr>
-              <tr><td>A11</td><td>Modernisation benefit</td><td>30% scaling</td><td><span class="conf-low">Low</span></td><td style="font-size:9.5px;">ESTIMATE — expand POC before committing</td></tr>
-            </tbody>
-          </table>
-          <div style="font-size:9px;color:#8D8D8D;font-style:italic;margin-top:2px;">Source: ROI AI Investment Pres.pptx</div>
-        </div>
-        </div><!-- /inner flex row -->
-      </div>
-      <div class="slide-footer">
-        <span>IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</span>
-        <span>8 / 11</span>
-      </div>
-    </div>
-
-    <!-- ======================================================
-         SLIDE 20 — How Savings Translate to 50% Efficiency
-    ====================================================== -->
-    <div class="slide" id="slide-20">
-      <div class="slide-header">
-        <div class="header-tag">IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</div>
-        <h2>How Savings Translate to 50% Efficiency</h2>
-        <div class="slide-number">9/11</div>
-      </div>
-      <div class="slide-body" style="flex-direction:row;gap:14px;padding:12px 18px;">
-        <!-- Left: 4 steps -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:8px;">
-          <div style="font-size:10.5px;color:#525252;font-style:italic;margin-bottom:2px;">The ROI% and the efficiency% are different metrics — this is the narrative bridge connecting $1.46M Year 1 savings to hours of manual work released.</div>
-          <div class="step-item">
-            <div class="step-num">1</div>
-            <div class="step-content">
-              <div class="step-title">Establish the Manual Effort Baseline</div>
-              <div class="step-body">~98% of Planning Analytics work is currently manual (workshop-confirmed). 750 users × ~40 hrs/week × 48 weeks = ~1,440,000 total annual labour hours in scope.</div>
-              <div class="step-result">~1,411,200 hours/year of manual work — the efficiency% denominator</div>
-            </div>
-          </div>
-          <div class="step-item">
-            <div class="step-num">2</div>
-            <div class="step-content">
-              <div class="step-title">Calculate Hours Released by AI in Year 1</div>
-              <div class="step-body">PA Agent: 375 active users × 4 hrs/week × 48 weeks = 72,000 gross hours. IBM Bob: ~8,140 developer-hours of realised value.</div>
-              <div class="step-result">Total gross hours released Year 1: ~80,140 hours</div>
-            </div>
-          </div>
-          <div class="step-item">
-            <div class="step-num">3</div>
-            <div class="step-content">
-              <div class="step-title">Express as % of Manual Baseline</div>
-              <div class="step-body">80,140 ÷ 1,411,200 — using 50% adoption, 15% realisation, and 25–30% conservative scaling.</div>
-              <div class="step-result">Year 1: ~5.7% of total manual effort automated</div>
-            </div>
-          </div>
-          <div class="step-item">
-            <div class="step-num">4</div>
-            <div class="step-content">
-              <div class="step-title">The 3-Year Trajectory to 50%</div>
-              <div class="step-body">Year 1 ramp → Year 2 adoption deepens → Year 3 full adoption + compounding modernisation flywheel.</div>
-              <div class="step-result">$5.2M cumulative net return = the financial expression of this efficiency journey</div>
-            </div>
-          </div>
-        </div>
-        <!-- Right: ROI vs Efficiency + trajectory -->
-        <div style="flex:1;display:flex;flex-direction:column;gap:10px;">
-          <!-- Why ROI ≠ Efficiency -->
-          <div style="background:#f0f4ff;border:1px solid #82CFFF;border-left:4px solid #002D9C;padding:10px 12px;border-radius:2px;">
-            <div style="font-size:11px;font-weight:600;color:#002D9C;margin-bottom:4px;">Why ROI% ≠ Efficiency%</div>
-            <div style="font-size:10.5px;color:#525252;line-height:1.5;">ROI measures return on investment — a 537% ROI means every $1 invested returns $5.37. Efficiency% measures how much total manual workload AI has absorbed. These metrics move in the same direction but are calculated differently.</div>
-          </div>
-          <!-- Trajectory -->
-          <div style="font-size:11px;font-weight:600;color:#002D9C;">3-Year Efficiency Trajectory vs. 50% North Star</div>
-          <div style="display:flex;flex-direction:column;gap:8px;">
-            <div class="traj-bar">
-              <div class="yr">Year 1</div>
-              <div class="bar-track"><div class="bar-fill" style="width:11.4%;">~5.7%</div></div>
-              <div class="bar-val">~5.7%</div>
-            </div>
-            <div class="traj-bar">
-              <div class="yr">Year 2</div>
-              <div class="bar-track"><div class="bar-fill" style="width:45%;">~22.5%</div></div>
-              <div class="bar-val">~20–25%</div>
-            </div>
-            <div class="traj-bar">
-              <div class="yr">Year 3</div>
-              <div class="bar-track"><div class="bar-fill target" style="width:100%;">★ 50% target</div></div>
-              <div class="bar-val">~50%</div>
-            </div>
-          </div>
-          <div style="font-size:10px;color:#0F62FE;font-weight:600;background:#e5f6ff;padding:6px 10px;border-radius:2px;text-align:center;">
-            50% North Star — achievable within conservative envelope
-          </div>
-          <!-- Narrative bridge -->
-          <div style="background:#fff;border:1px solid #e0e0e0;border-top:3px solid #0F62FE;padding:8px 12px;border-radius:2px;">
-            <div style="font-size:10px;font-weight:600;color:#002D9C;margin-bottom:3px;">The Narrative Bridge</div>
-            <div style="font-size:10px;color:#525252;line-height:1.4;">The ~$1.46M Year 1 net return represents ~80,000 hours of manual planning, coding, and analysis work that Woolworths staff no longer need to perform manually — and that is how dollars become efficiency percentages.</div>
-          </div>
-        </div>
-      </div>
-      <div class="slide-footer">
-        <span>IBM Data &amp; AI | Confidential | Prepared for Woolworths Finance &amp; Planning Team</span>
-        <span>9 / 11</span>
+        <span>IBM Data &amp; AI | Confidential</span>
+        <img src="images/image28.png" alt="IBM" style="height:14px;filter:brightness(10);">
       </div>
     </div>
 
@@ -1371,24 +981,6 @@
     </div>
 
     <!-- ======================================================
-         SLIDE 27 — How Planning Analytics Works with Bob (section)
-    ====================================================== -->
-    <div class="slide" id="slide-27" style="background:#E5F6FF;">
-      <div style="display:flex;flex-direction:column;height:100%;padding:0;">
-        <div style="background:#002D9C;padding:16px 28px;display:flex;align-items:center;gap:14px;">
-          <img src="images/image28.png" alt="IBM" style="height:22px;filter:brightness(10);">
-          <div style="width:1px;height:28px;background:rgba(255,255,255,0.3);"></div>
-          <img src="images/image33.png" alt="Bob" style="height:28px;width:28px;object-fit:contain;border-radius:50%;background:white;padding:2px;" onerror="this.style.display='none'">
-        </div>
-        <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;gap:20px;text-align:center;">
-          <div style="font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#0F62FE;font-weight:600;">Appendix</div>
-          <div style="font-size:30px;font-weight:300;color:#002D9C;line-height:1.25;max-width:600px;">How Planning Analytics Works<br><strong style="font-weight:600;">with Bob</strong></div>
-          <div style="width:64px;height:3px;background:#0F62FE;"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ======================================================
          SLIDE 28 — See Bob in Action (PA Development)
     ====================================================== -->
     <div class="slide" id="slide-28" style="background:#F4F4F4;">
@@ -1427,16 +1019,6 @@
           <div style="font-size:13px;color:#525252;margin-bottom:4px;">Powered by Watsonx Orchestrate</div>
           <div style="font-size:11px;color:#0F62FE;font-weight:500;">Click for a Personalised Demonstration for Woolworths</div>
         </div>
-      </div>
-    </div>
-
-    <!-- ======================================================
-         SLIDE 32 — Internal Use Only
-    ====================================================== -->
-    <div class="slide" id="slide-32" style="background:#161616;">
-      <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:40px;">
-        <img src="images/image28.png" alt="IBM" style="height:40px;filter:brightness(10);opacity:0.6;">
-        <div style="font-size:14px;color:rgba(255,255,255,0.5);letter-spacing:1px;text-align:center;">IBM and Business Partner Internal Use Only</div>
       </div>
     </div>
 

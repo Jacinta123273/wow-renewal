@@ -1,0 +1,775 @@
+=== /slide[1] ===
+IBM Planning AnalyticsWoolworths RenewalIBM Planning Analytics2027-28 Pricing Options 
+
+
+—Jacinta PattersonBrand Sales Specialist | IBM Data & AI Jacinta.Patterson @ibm.com
+
+Enzo Canessa Technology Leader | IBM
+Enzo.Canessa@ibm.com
+
+
+
+=== /slide[2] ===
+Today’s conversation
+Planning Analytics Renewal
+1
+Current 
+Contract
+2
+Renewal Options 1 & 2 
+3
+AI Bundle 
+4
+Business Case
+Option 1: As-Is + Changes 
+Option 2: Option 1 + Agents 
+Watsonx Orchestrate 
+Bob 
+& Appendix 
+
+=== /slide[3] ===
+Woolworths Current Contract 
+3
+Woolworths 2026 IPA Renewal 
+SaaS Deployment 
+Start Date: 1/1/2026 
+End Date:   12/31/2026
+Description
+Quantity
+Authorised Users (MAU)
+928
+Planning Storage — 250GB / Month
+60
+Premium Instance Memory — 1TB (2TB total) / Instance / Month
+3
+Premium Instance Memory — 512GB (1TB total) / Instance / Month
+3
+Annual Total (AUD)
+$885,279.04 
+
+=== /slide[4] ===
+Woolworths Requested Changes for Option 1 
+4
+Reduced MAU 
+Woolworths 2026 IPA Renewal 
+Term From 12 to 24 Months
+Description
+Quantity
+Authorised Users (MAU)
+928
+Planning Storage — 250GB / Month
+60
+Premium Instance Memory — 1TB (2TB total) / Instance / Month
+3
+Premium Instance Memory — 512GB (1TB total) / Instance / Month
+3
+Annual Total (AUD)
+$885,279.04 
+
+=== /slide[5] ===
+Renewal Option 1 
+5
+Woolworths 2026 IPA Renewal 
+Reduction of MAU by 20% 
+928  750
+Summary of Changes
+Term Increase 
+24 Months
+Description
+Quantity
+Authorised Users (MAU)
+750
+Planning Storage — 250GB / Month
+60
+Premium Instance Memory — 1TB (2TB total) / Instance / Month
+3
+Premium Instance Memory — 512GB (1TB total) / Instance / Month
+3
+Annual Total (AUD)
+ $       826,591.72 
+24 Month Total (AUD) 5% YoY
+ $   1,694,513.03 
+
+=== /slide[6] ===
+AI Assisted
+At Woolworths we Want to realise 
+50%
+Efficiencies through AI in our usage of Planning Analytics 
+
+=== /slide[7] ===
+Renewal Option 2 
+7
+Woolworths 2026 IPA Renewal 
+Reduction of MAU by 20% 
+928  750
+Summary Changes
+Term Increase 
+24 Months
+Additional Storage
+4TB per Environment
+AI Enhancement 
+Agent access for each MAU 
+$300k of product value
+Category 
+Description
+Quantity
+Existing Licensing  
+Authorised Users (MAU)
+750
+Additional Planning Storage — 250GB / Month
+60
+Premium Instance Additional Memory — 1TB (2TB total) / Instance / Month
+3
+Premium Instance Additional Memory — 512GB (1TB total) / Instance / Month
+3
+New 
+Premium Instance Additional Memory — 1TB (4TB total) / Instance / Month
+3
+ Agent Add-on (MAU)
+750
+Annual Total (AUD)
+ $       970,956.56 
+24 Month Total (AUD) 5% YoY
+ $   1,990,460.95 
+
+=== /slide[8] ===
+
+=== /slide[9] ===
+
+=== /slide[10] ===
+We wrap up
+
+=== /slide[11] ===
+AI Enhancement Bundle
+11
+Woolworths 2026 IPA Renewal 
+Description
+Quantity
+Annual Cost  
+Bob Authorised Users 
+90
+ $      22,979.70 
+Bob Pooled Consumption 1000 RU's Per Annum 
+180
+ $   127,400.69 
+Watson Orchestrate Standard Edition 
+1
+ $      81,196.02 
+Annual Total (AUD)
+ $   231,576.41 
+24 Month Total (AUD) 5% YoY
+ $   474,731.64 
+
+=== /slide[12] ===
+ROI Modelling
+AI Investment 
+“We want to realise 50% in efficiencies with AI over the next 3 years using Planning Analytics.”
+Woolworths North Star 
+Planning Analytics Agent 
+Watsonx Orchestrate
+Bob
+
+=== /slide[13] ===
+The Efficiency Mandate
+Woolworths' "50% gain in efficiencies using Planning Analytics over 3 years" is not an aspiration, it is the financial lens through which every number in this model must be read.
+Woolworths North Star
+50
+%
+Gain in efficiencies using
+Planning Analytics
+Over 3 Years
+90
+Developers — IBM Bob
+750
+Licensed Finance & Planning Users
+~98%
+of PA effort currently manual
+Woolworths has formally stated its North Star: "50% Gain in efficiencies using Planning Analytics over the next 3 years"  a bold operational target requiring AI-led automation at scale. 
+~98% of Planning Analytics effort today remains manual the automation headroom is enormous and the 50% target is achievable within conservative modelling. 
+Two IBM solutions address both ends of the Woolworths workforce: IBM Bob targets 90 developers; the Planning Analytics Agent Add-On targets 750 licensed finance and planning users.
+Together they form a unified efficiency play one investment envelope, one strategic narrative, one 3-year return path toward the 50% mandate.
+IBM Data & AI | Confidential | Prepared for Woolworths Finance & Planning Team
+2 / 11
+
+=== /slide[14] ===
+Two Models, One Investment Case
+At a combined annual outlay of $271,797 AUD , the two solutions deliver ~$1.46M net in Year 1 a blended ROI of ~537% with both payback periods under 9 weeks.
+IBM Bob — Developer Productivity 
+90 Developers in Scope
+Annual Cost
+$150,000 AUD
+Annual Benefit (Base)
+~$814,000 AUD
+Net Return
+~$664,000 AUD
+~443%
+Base Case ROI
+Payback: ~9 weeks
+Scenario Range
+~215%
+Downside
+~443%
+Base
+~2,003%
+Headline
+Planning Analytics Agent Add-On [1]
+750 Licensed Finance & Planning Users (375 Active Yr 1)
+Annual Cost
+$121,797 AUD
+Annual Benefit (Base)
+~$918,000 AUD
+Net Return
+~$796,000 AUD
+~654%
+Base Case ROI
+Payback: ~8 weeks
+Scenario Range
+~108%
+Conservative
+~654%
+Base
+~1,854%
+Aggressive
+Combined Unified value
+$271,797 AUD
+Total Annual Investment
+~$1,732,000 AUD
+Total Annual Benefit (Base)
+~$1,460,000
+Combined Net Return — Year 1
+~537%
+Blended ROI
+Bob: ~9 wks
+Agent: ~8 wks
+IBM Data & AI | Confidential | Prepared for Woolworths Finance & Planning Team
+3
+
+=== /slide[15] ===
+The Math Explained
+Translating dollars saved back into hours released, then expressing those hours as a share of total annual manual effort.
+1
+The ROI Formula
+ROI % = (Net Return ÷ Annual Investment) × 100
+Agent:
+($796K ÷ $121,797) × 100
+= ~654%
+IBM Bob:
+($664K ÷ $150,000) × 100
+= ~443%
+Blended:
+($1,460K ÷ $271,797) × 100
+= ~537%
+2
+Payback Period Formula
+Payback (weeks) = (Annual Cost ÷ Annual Benefit) × 52
+Agent:
+($121,797 ÷ $918,000) × 52
+= ~6.9 wks ≈ 8 wks
+Ramp-adjusted
+IBM Bob:
+($150,000 ÷ $814,000) × 52
+= ~9.6 wks ≈ 9 wks
+Both solutions recover investment within 9 weeks
+3
+From $ Savings to Hours Released
+~10,800 hrs/yr — Agent (~$918K ÷ $85/hr, at 15% realisation)
+~8,140 hrs/yr — IBM Bob (~$814K ÷ $100/hr developer rate)
+Combined realised value: ~18,940 hours/year
+Gross hours released: 72,000 hrs/yr (Agent) — realisation factor converts gross to net
+4
+From Hours to Efficiency %
+Efficiency % = Hours Released ÷ Total Manual Hours
+Yr 1
+~5.7%
+Yr 2
+~20–25%
+Yr 3
+50%
+ROI% ≠ Efficiency% — different metrics, same direction
+IBM Data & AI | Confidential | Prepared for Woolworths Finance & Planning Team
+4 / 11
+
+=== /slide[16] ===
+Planning Analytics Agent Add-On: Deep-Dive
+The ~$918K benefit is derived entirely bottom-up from the 750-user base — every input is auditable, and the key lever is the 15% realisation factor applied to 72,000 gross hours released.
+The Bottom-Up Calculation — Step by Step 
+1
+750 licensed users × 50% Year 1 adoption
+= 375 active users
+2
+375 users × 4 hrs/week × 48 productive weeks
+= 72,000 gross hours released/year
+3
+72,000 hrs × $85/hr (blended loaded rate)
+= $6,120,000 gross time value
+4
+$6,120,000 × 15% realisation factor
+= ~$918,000 net benefit
+5
+$918,000 − $121,797 annual cost
+= ~$796,000 net return → ~654% ROI
+Why 15% Realisation? Not all saved hours convert to direct cash savings — some redirect to higher-value analysis. 15% is deliberately conservative; 20% (Aggressive) assumes an active redeployment programme.
+Use Case Split — 4 hrs/user/week (Base Case)
+Forecast & Scenario Modelling
+2.00 hrs
+Variance & Exception Reporting
+1.00 hr
+Data Prep & ETL
+0.75 hrs
+Insight & Ad-hoc Queries
+0.25 hrs
+Scenario Range
+Conservative scenario: 25% adoption (188 users), 3 hrs/week saved, $75/hr, 10% realisation → ~$253K benefit. Woolworths Group FY26 revenue ~AUD $71.5B model captures direct labour savings only; forecast accuracy improvements represent additional unmodelled upside. 
+IBM Data & AI | Confidential | Prepared for Woolworths Finance & Planning Team
+5 / 11
+Metric
+Conservative
+Base Case
+Aggressive
+Annual Agent Cost (AUD)
+$121,797
+$121,797
+$121,797
+Total Benefit (AUD)
+~$253,000
+~$918,000
+~$2,379,000
+Net Return (AUD)
+~$131,000
+~$796,000
+~$2,257,000
+ROI %
+~108%
+~654%
+~1,854%
+Payback Period
+~23 months
+~8 weeks
+~3 weeks
+
+=== /slide[17] ===
+IBM Bob Deep-Dive — 5 Value Dimensions
+IBM Bob's ~$814K base benefit is built from five value dimensions, each scaled to 25–30% of the IBM calculator, deliberately conservative, anchored by a POC-confirmed documentation result of $31,200.
+Conservative Scaling — 5 Value Dimensions
+90 developers × 1,980 hrs/yr × $100/hr = $17,820,000 total developer cost pool
+1
+Documentation POC Confirmed
+10% dev hrs × 50% AI reduction × 25% realisation = $31,200/yr — empirically validated anchor
+2
+Coding
+30% of dev hrs × 45% AI reduction × 25% scaling applied
+3
+Legacy Skills Retention
+25% scaling applied to calculator figure
+4
+Modernisation (SI/COBOL) Indicative
+30% scaling; highest-uncertainty dimension — treat as indicative only
+5
+Developer Capacity / Delivery Speed
+25% scaling applied to calculator figure
+Scenario Range
+IBM Data & AI | Confidential | Prepared for Woolworths Finance & Planning Team
+6 / 11
+Metric
+Downside (15%)
+Base Conservative (25–30%)
+Calculator Headline
+Annual IBM Bob Cost (AUD)
+$150,000
+$150,000
+$150,000
+Total Benefit (AUD)
+~$473,000
+~$814,000
+$3,154,175
+Net Return (AUD)
+~$323,000
+~$664,000
+~$3,004,000
+ROI %
+~215%
+~443%
+~2,003%
+Payback Period
+~4 months
+~9 weeks
+~2 weeks
+
+=== /slide[18] ===
+3-Year Horizon
+Over three years, the combined IBM investment is projected to deliver ~$5.2M in cumulative net return a financially grounded pathway to Woolworths' 50% efficiency target.
+Year 1
+Adoption Ramp
+375 of 750 PA users active; IBM Bob scaling across dev dimensions
+~$1.46M 
+Year 2
+Full Adoption Builds
+Planning users at target; developer productivity compounds as modernisation matures
+~$1.73M
+Year 3
+Platform-Developer Flywheel
+Both communities fully AI-assisted; workflows and modernisation at full maturity
+~$2.01M
+3-Year Cumulative Net Return
+Conservative base model · AUD
+~$5.2M
+Additional unmodelised upside: forecast accuracy improvements not monetised in base model represent further upside for a $71.5B retailer.
+Net Return Ramp (AUD) — Annual & Cumulative
+Source: ROI AI Investment Pres .pptx
+
+=== /slide[19] ===
+Assumption Audit
+Every assumption is flagged by confidence level — High inputs are confirmed; Medium inputs should be validated against Woolworths actuals before the model is finalised.
+High
+Confirmed
+Medium
+Estimate / Placeholder
+Low
+Excluded / Indicative
+Planning Analytics Agent Add-On
+Source: ROI AI Investment Pres .pptx
+IBM Bob — Developer Productivity
+Source: ROI AI Investment Pres .pptx
+IBM Data & AI | Confidential | Prepared for Woolworths Finance & Planning Team
+8 / 11
+#
+Input
+Value Used
+Conf.
+Flag
+A1
+Annual agent add-on cost
+$121,797
+High
+Confirmed
+A2
+Total licensed users
+750
+High
+Confirmed
+A3
+Year 1 adoption rate
+25% / 50% / 70%
+Med
+PLACEHOLDER — replace with rollout plan
+A4
+Hours saved per user/week
+3 / 4 / 5 hrs
+Med
+ESTIMATE — validate with time-study
+A5
+Working weeks/year
+48 weeks
+High
+Confirmed (Australian context)
+A6
+Loaded hourly rate (AUD)
+$75 / $85 / $95
+Med
+PLACEHOLDER — replace with salary data
+A7
+Benefit realisation factor
+10% / 15% / 20%
+Med
+ESTIMATE — subject to HR/finance policy
+A10
+Baseline manual effort
+~98% of PA is manual
+High
+Confirmed (workshop)
+A11
+Forecast accuracy improvement
+Not monetised
+Low
+EXCLUDED — add if $/% value available
+#
+Input
+Value Used
+Conf.
+Flag
+A1
+Annual IBM Bob cost (AUD)
+$150,000
+High
+Confirmed
+A2
+Developers in scope
+90
+High
+Confirmed
+A3
+Blended developer rate (AUD/hr)
+$100/hr
+Med
+PLACEHOLDER — validate with Woolworths
+A8
+Documentation time reduction
+50% (POC)
+High
+Confirmed via POC
+A10
+Coding time reduction
+45% (scaled 25%)
+Med
+ESTIMATE
+A11
+Modernisation benefit
+30% scaling
+Low
+ESTIMATE — expand POC before committing
+
+=== /slide[20] ===
+How Savings Translate to 50% Efficiency
+The ROI% and the efficiency% are different metrics — this is the narrative bridge connecting $1.46M Year 1 savings to hours of manual work released, mapping explicitly toward Woolworths' 50% target.
+1
+Establish the Manual Effort Baseline
+~98% of Planning Analytics work is currently manual (workshop-confirmed). 750 users × ~40 hrs/week × 48 weeks = ~1,440,000 total annual labour hours in scope.
+~1,411,200 hours/year of manual work — the efficiency% denominator [1]
+2
+Calculate Hours Released by AI in Year 1
+Planning Analytics Agent: 375 active users × 4 hrs/week × 48 weeks = 72,000 gross hours released . IBM Bob: ~8,140 developer-hours of realised value (~$814K ÷ $100/hr).
+Total gross hours released Year 1: ~80,140 hours [1]
+3
+Express as % of Manual Baseline
+80,140 ÷ 1,411,200 — using 50% adoption, 15% realisation, and 25–30% conservative scaling.
+Year 1: ~5.7% of total manual effort automated [1]
+4
+The 3-Year Trajectory to 50% — See Panel
+Year 1 ramp → Year 2 adoption deepens → Year 3 full adoption + compounding modernisation flywheel. Note: 50% target applies to Planning Analytics; IBM Bob developer gains are additive upside.
+$5.2M cumulative net return = the financial expression of this efficiency journey [1]
+Why ROI% ≠ Efficiency%
+ROI measures return on investment — a 537% ROI means every $1 invested returns $5.37. Efficiency% measures how much total manual workload AI has absorbed. These metrics move in the same direction but are calculated differently. [1]
+3-Year Efficiency Trajectory vs. 50% North Star
+Year 1
+~5.7%
+Year 2
+~20–25%
+Year 3
+~50% target
+50% North Star — achievable within conservative envelope
+The Narrative Bridge
+The ~$1.46M Year 1 net return represents ~80,000 hours of manual planning, coding, and analysis work that Woolworths staff no longer need to perform manually — and that is how dollars become efficiency percentages. [1]
+IBM Data & AI | Confidential | Prepared for Woolworths Finance & Planning Team
+9 / 11
+
+=== /slide[21] ===
+Appendix
+
+=== /slide[22] ===
+How Watsonx Orchestrate Works with Planning Analytics
+Footer
+
+=== /slide[23] ===
+See the agent in action
+Powered by Watsonx Orchestrate 
+Click for a Personalised demonstration for Woolworths 
+
+
+=== /slide[24] ===
+Capability comparison  ·  1 of 3
+Chat, data and analysis
+© 2026 IBM Corporation
+24
+Included
+Partial
+Not available
+Capability
+Native PA agent
+Option A  ·  IBM managed, in PAW
+PA MCP + custom AI client
+Option B  ·  e.g. Claude, Copilot Studio
+PA agent + watsonx Orchestrate
+Option C  ·  Native PA + custom agent
+Chat and data access
+Natural language questions
+Data Explorer turns the question into a PAW view.
+The LLM answers through PA MCP tools.
+Native PA agent and custom agents, in PAW.
+Data returned in chat
+Chat can't query data. It only triggers AI pipeline tasks.
+MCP tools bring PA data into the chat.
+MCP tools and AI pipelines bring PA data into the chat.
+PA perspectives and widgets
+AI pipeline tasks trigger perspectives and widgets.
+No PA perspective integration. Can't read or drive widgets.
+Keeps the same perspective and widget triggers.
+Context from the current view
+Explain Cell and chart insights work on a selected item.
+Separate chat. Can't see the user's PAW view.
+Highlight a column in PAW and ask about it.
+Native PA AI features
+Data Explorer, forecasting, Explain Cell, outlier and impact analysis.
+Data Explorer, outlier and impact tools. No Explain Cell or forecasting.
+All native features, in the same PAW workbook.
+Analysis
+Business context
+Knows cubes and members, not your business terms.
+Set up in each client's prompts and knowledge.
+Knows your hierarchies, cost lines and sign conventions.
+Data validation
+Shows results as is. Doesn't flag missing data.
+Same custom tools. Guardrails may differ by client.
+Checks Actual and Budget are both present first.
+Ranked profitability
+Shows views only. No calculated rankings.
+Same custom tools, same build effort.
+Calculates profit by dimension and ranks the loss-makers.
+Variance drivers
+Explain Cell traces the formula, not the business cause.
+Same custom tools, explained by your LLM.
+Explains drivers in finance terms after the data checks.
+All three use the same TM1 cubes, your existing PA security and the PA Agent add-on licence. MCP tools need PAW 2.1.24.
+Functionality specs Agent stand alone, Agent with MCP And BYO AI and with Watsonx Orchestrate
+
+PA Agent License Required 
+PA Agent License Required 
+PA Agent & WxO License Required 
+
+=== /slide[25] ===
+Capability comparison  ·  2 of 3
+Outputs and outside data
+© 2026 IBM Corporation
+25
+Included
+Partial
+Not available
+Capability
+Native PA agent
+Option A  ·  IBM managed, in PAW
+PA MCP + custom AI client
+Option B  ·  e.g. Claude, Copilot Studio
+PA agent + watsonx Orchestrate
+Option C  ·  Native PA + custom agent
+Charts and reports
+Custom charts
+Charts stay in PAW, in the standard chart types.
+Same chart tools. Display depends on the client.
+Your chart types, including route heat maps, in the chat.
+Chart sharing
+Interactive inside PAW only.
+Output stays in each user's client.
+Interactive charts you can download and share.
+Report generation
+No report output.
+Same report tools, same build effort.
+PDF reports in your template and branding.
+Recommendations
+Statistical recommendations, without business context.
+Depends on prompts set up in each client.
+Only what the data supports, with an owner for each action.
+Outside data and scenarios
+External data sources
+TM1 data only.
+Any tool the client supports, set up per client.
+Databases, ERP, APIs and market feeds, with central credentials.
+Knowledge bases
+Not available.
+Depends on the client or agent platform.
+Holds report templates, finance definitions and policies.
+Signal-driven scenarios
+Not available.
+Custom build. Depends on the client.
+Turns an outside signal, such as a fuel price move, into a scenario.
+Approval before writes
+Can suggest a scenario. Can't ask for approval.
+Only if the client confirms before tool calls.
+Writes only after the user approves the exact change.
+TM1 process execution
+Analysis and view actions only.
+Runs TM1 processes through MCP tools.
+Runs the TM1 process once approved.
+Reports, charts and analysis in Options B and C need custom tools. The build effort is the same for both.
+
+=== /slide[26] ===
+Capability comparison  ·  3 of 3
+Platform, control and delivery
+© 2026 IBM Corporation
+26
+Included
+Partial
+Not available
+Capability
+Native PA agent
+Option A  ·  IBM managed, in PAW
+PA MCP + custom AI client
+Option B  ·  e.g. Claude, Copilot Studio
+PA agent + watsonx Orchestrate
+Option C  ·  Native PA + custom agent
+Agent platform
+Custom agents in PAW
+Native agent only.
+Runs outside PAW, in a separate chat.
+Run beside the native agent and drive widgets.
+Custom tools
+Not available.
+Build effort depends on the framework.
+Same tools, same build effort.
+Multi-agent handoff
+One assistant.
+Depends on the platform and framework.
+Specialist agents pass work to each other.
+Model choice
+Chat runs on GPT-OSS-120B. Pipelines use watsonx.ai or AWS Bedrock.
+Any model the client supports.
+Any model available in watsonx Orchestrate.
+Governance
+Access to PA data
+Inherits PA cube security and authorization.
+OAuth, inherits PA security.
+OAuth, inherits PA security.
+Monitoring
+IBM managed. No custom agent traces.
+None locally. Hosted agents add their own.
+Built-in agent monitoring, logs and traces.
+Guardrails
+Set by IBM. You can't add your own.
+Rebuilt in each client from the ADK format.
+Defined once, applied to every user.
+Consistent output
+One IBM-managed agent for every user.
+Client config differences change the answer.
+One agent config for every user.
+Delivery and cost
+User front end
+Built into PAW.
+Per-user setup, or a custom app.
+Attaches to PAW through PA agent config.
+Hosting
+IBM managed, in IBM Cloud Sydney.
+Locally per user, or on hosting you run.
+IBM Cloud Sydney SaaS. AWS SaaS on the roadmap, plus on-prem.
+Platform cost
+Included with the PA Agent add-on licence.
+Reuses your Copilot Studio or Claude licences.
+One subscription covers tool hosting, storage and monitoring.
+
+=== /slide[27] ===
+How Planning Analytics Works with Bob
+Footer
+
+=== /slide[28] ===
+See Bob in action
+When supporting Planning Analytics Development, Optimisation & Innovation
+
+This demo showcases an AI-assisted workflow for designing and deploying a Planning Analytics model from scratch. Using Bob with Planning Analytics as the demo interface, the copilot generates TM1 artifacts, creates documentation, and deploys the model through MCP Tools.
+
+=== /slide[29] ===
+See Bob in action
+When supporting Planning Analytics Development, Optimisation & Innovation
+
+This demonstration showcases how IBM Bob analyzes a TM1 Planning Analytics server, identifies optimization opportunities, generates a comprehensive report, and guides implementation.
+
+=== /slide[30] ===
+How Watsonx Orchestrate Works with Bob
+Footer
+
+=== /slide[31] ===
+See Bob in action
+Powered by Watsonx Orchestrate 
+Click for a Personalised demonstration for Woolworths 
+
+
+=== /slide[32] ===
+IBM and Business Partner Internal Use Only
+
+=== /slide[33] ===
